@@ -4,16 +4,16 @@
 
 <!-- Página principal -->
     <url>
-        <loc>https://MI-DOMINIO.vercel.app/</loc>
+        <loc>https://sem15interfaces.vercel.app/</loc>
         <lastmod>2025-11-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    
+
 <!-- Catálogo -->
 
     <url>
-        <loc>https://MI-DOMINIO.vercel.app/paginas/catalogo.html</loc>
+        <loc>https://sem15interfaces.vercel.app/paginas/catalogo.html</loc>
         <lastmod>2025-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -22,7 +22,7 @@
 <!-- Carrito -->
 
     <url>
-        <loc>https://MI-DOMINIO.vercel.app/paginas/carrito.html</loc>
+        <loc>https://sem15interfaces.vercel.app/paginas/carrito.html</loc>
         <lastmod>2025-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -31,7 +31,7 @@
 <!-- Nosotros -->
 
     <url>
-        <loc>https://MI-DOMINIO.vercel.app/paginas/nosotros.html</loc>
+        <loc>https://sem15interfaces.vercel.app/paginas/nosotros.html</loc>
         <lastmod>2025-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -40,7 +40,7 @@
 <!-- Pago -->
 
     <url>
-        <loc>https://MI-DOMINIO.vercel.app/paginas/pago.html</loc>
+        <loc>https://sem15interfaces.vercel.app/paginas/pago.html</loc>
         <lastmod>2025-11-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>

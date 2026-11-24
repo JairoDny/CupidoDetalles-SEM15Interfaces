@@ -9,4 +9,4 @@ Disallow: /admin/
 Disallow: /privado/
 
 # Ubicación del mapa del sitio
-Sitemap: https://MI-DOMINIO.vercel.app/sitemap.xml
+Sitemap: https://sem15interfaces.vercel.app/sitemap.xml
