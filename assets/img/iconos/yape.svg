@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60">
+  <rect width="120" height="60" rx="10" fill="#742284"/>
+  <circle cx="95" cy="30" r="16" fill="#00D2B4"/>
+  <text x="24" y="38" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="24" fill="#FFFFFF" letter-spacing="-0.5">yape</text>
+  <circle cx="103" cy="22" r="3" fill="#FFFFFF"/>
+</svg>

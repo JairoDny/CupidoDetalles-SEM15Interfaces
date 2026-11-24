@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cupidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C1121F" />
+      <stop offset="50%" stop-color="#D62839" />
+      <stop offset="100%" stop-color="#F497B6" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FCD34D" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Heart with Cupid Wings / Ribbon -->
+  <g transform="translate(10, 8)">
+    <!-- Glow behind heart -->
+    <path d="M35 15 C35 5, 20 2, 10 12 C0 22, 0 35, 10 45 L35 70 L60 45 C70 35, 70 22, 60 12 C50 2, 35 5, 35 15 Z" fill="#FFD6E0" opacity="0.5" />
+    
+    <!-- Left Wing -->
+    <path d="M12 28 C-4 22, -10 38, -2 46 C5 52, 16 48, 16 48" fill="none" stroke="#F497B6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M15 36 C4 32, -2 44, 4 50 C10 54, 18 50, 18 50" fill="none" stroke="#F497B6" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Right Wing -->
+    <path d="M58 28 C74 22, 80 38, 72 46 C65 52, 54 48, 54 48" fill="none" stroke="#F497B6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M55 36 C66 32, 72 44, 66 50 C60 54, 52 50, 52 50" fill="none" stroke="#F497B6" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Main Heart -->
+    <path d="M35 18 C35 8, 22 5, 13 14 C4 23, 4 35, 13 44 L35 66 L57 44 C66 35, 66 23, 57 14 C48 5, 35 8, 35 18 Z" fill="url(#cupidGrad)" />
+    
+    <!-- Heart Highlight -->
+    <path d="M22 17 C16 19, 13 25, 14 31" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Cupid's Golden Arrow -->
+    <g transform="rotate(-30 35 35)">
+      <!-- Shaft -->
+      <line x1="-5" y1="35" x2="75" y2="35" stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round" />
+      <!-- Arrowhead -->
+      <path d="M72 30 L82 35 L72 40 Z" fill="url(#goldGrad)" />
+      <!-- Feathers -->
+      <path d="M-5 35 L-12 28 M-2 35 L-9 28 M-5 35 L-12 42 M-2 35 L-9 42" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+    
+    <!-- Sparkles -->
+    <circle cx="58" cy="12" r="2.5" fill="#F59E0B" />
+    <polygon points="62,10 63,6 64,10 68,11 64,12 63,16 62,12 58,11" fill="#F59E0B" />
+  </g>
+
+  <!-- Typography -->
+  <text x="100" y="44" font-family="'Playfair Display', 'Georgia', serif" font-size="28" font-weight="700" fill="#2B2B2B" letter-spacing="-0.5">
+    Detalles<tspan fill="#D62839">Cupido</tspan>
+  </text>
+  <text x="102" y="62" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#F497B6" letter-spacing="3.5">
+    REGALOS &amp; AMOR
+  </text>
+</svg>

@@ -1,0 +1,442 @@
+/* ==========================================================================
+   DetallesCupido - Estilos Globales (estilos.css)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Paleta Oficial DetallesCupido */
+  --color-primario: #D62839;       /* Rojo romántico */
+  --color-secundario: #F497B6;     /* Rosa suave */
+  --color-fondo: #FFF1F5;          /* Rosa claro */
+  --color-boton: #C1121F;          /* Rojo intenso */
+  --color-texto: #2B2B2B;          /* Gris oscuro */
+  --color-resaltado: #FFD6E0;      /* Rosa pastel */
+
+  /* Colores de apoyo */
+  --color-blanco: #FFFFFF;
+  --color-gris-claro: #F9FAFB;
+  --color-gris-borde: #F0D0D8;
+  --color-dorado: #F59E0B;
+  --color-verde: #10B981;
+  --color-whatsapp: #25D366;
+
+  /* Tipografías */
+  --fuente-titulos: 'Playfair Display', Georgia, serif;
+  --fuente-cuerpo: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Sombras románticas suaves */
+  --sombra-suave: 0 4px 20px rgba(214, 40, 57, 0.08);
+  --sombra-media: 0 8px 30px rgba(214, 40, 57, 0.14);
+  --sombra-fuerte: 0 15px 40px rgba(193, 18, 31, 0.22);
+
+  /* Bordes y Transiciones */
+  --radio-sm: 8px;
+  --radio-md: 14px;
+  --radio-lg: 22px;
+  --radio-full: 9999px;
+  --transicion-rapida: 0.25s ease;
+  --transicion-suave: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset Moderno */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transicion-rapida);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: var(--transicion-rapida);
+}
+
+input, select, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+/* ==========================================================================
+   Contenedores y Utilidades
+   ========================================================================== */
+
+.contenedor {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.seccion-padding {
+  padding: 5rem 0;
+}
+
+.seccion-titulo-centro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.subtitulo-romantico {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--color-primario);
+  background: rgba(244, 151, 182, 0.2);
+  padding: 0.35rem 1.2rem;
+  border-radius: var(--radio-full);
+  margin-bottom: 0.8rem;
+}
+
+.titulo-principal {
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-texto);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.titulo-principal span {
+  color: var(--color-primario);
+  font-style: italic;
+}
+
+.texto-descripcion {
+  font-size: 1.05rem;
+  color: #555555;
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Botones
+   ========================================================================== */
+
+.btn-primario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: var(--color-boton);
+  color: var(--color-blanco);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radio-full);
+  box-shadow: 0 6px 20px rgba(193, 18, 31, 0.35);
+  transition: all var(--transicion-suave);
+  cursor: pointer;
+}
+
+.btn-primario:hover {
+  background-color: #9c0b16;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(193, 18, 31, 0.45);
+}
+
+.btn-secundario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: var(--color-blanco);
+  color: var(--color-primario);
+  border: 2px solid var(--color-primario);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--radio-full);
+  transition: all var(--transicion-suave);
+}
+
+.btn-secundario:hover {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  transform: translateY(-3px);
+  box-shadow: var(--sombra-media);
+}
+
+.btn-bloque {
+  width: 100%;
+}
+
+.btn-enlace {
+  color: var(--color-primario);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.btn-enlace:hover {
+  text-decoration: underline;
+}
+
+.btn-peligro {
+  color: #DC2626 !important;
+}
+
+/* ==========================================================================
+   Insignias y Etiquetas (Badges)
+   ========================================================================== */
+
+.badge-etiqueta {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: linear-gradient(135deg, var(--color-boton), var(--color-primario));
+  color: var(--color-blanco);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radio-full);
+  box-shadow: 0 4px 12px rgba(193, 18, 31, 0.3);
+  z-index: 2;
+}
+
+/* ==========================================================================
+   Notificaciones Toast
+   ========================================================================== */
+
+.toast-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 99999;
+}
+
+.toast-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 300px;
+  max-width: 420px;
+  background: var(--color-blanco);
+  padding: 1rem 1.2rem;
+  border-radius: var(--radio-md);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-left: 5px solid var(--color-primario);
+  animation: slideInRight 0.35s ease forwards;
+}
+
+.toast-item.toast-error {
+  border-left-color: #EF4444;
+}
+
+.toast-item.toast-info {
+  border-left-color: #3B82F6;
+}
+
+.toast-icono {
+  font-size: 1.4rem;
+}
+
+.toast-mensaje {
+  flex: 1;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--color-texto);
+}
+
+.toast-cerrar {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.toast-cerrar:hover {
+  color: var(--color-texto);
+}
+
+.toast-desvanecer {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.4s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ==========================================================================
+   Modales Globales
+   ========================================================================== */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 1.5rem;
+}
+
+.modal-overlay.activo {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 43, 43, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.modal-dialogo {
+  position: relative;
+  background: var(--color-blanco);
+  border-radius: var(--radio-lg);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 2;
+  animation: modalEntrada 0.3s ease;
+}
+
+@keyframes modalEntrada {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #777;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF1F5;
+  z-index: 10;
+}
+
+.modal-cerrar:hover {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+/* ==========================================================================
+   Efecto de Corazones Flotantes (Background Romance)
+   ========================================================================== */
+
+.efecto-corazones-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.corazon-flotante {
+  position: absolute;
+  color: rgba(244, 151, 182, 0.35);
+  animation: flotarCorazon 6s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes flotarCorazon {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1) rotate(10deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.4;
+  }
+}
+
+/* ==========================================================================
+   Scrollbar Personalizada Romántica
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF1F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F497B6;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D62839;
+}

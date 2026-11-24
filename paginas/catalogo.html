@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo completo de DetallesCupido: Rosas eternas, cajas sorpresa, peluches gigantes, desayunos y regalos personalizados.">
+
+    <!--Sem15Interfaces - Etiquetas SEO -->
+
+  <!-- TÍTULO: aparece en la pestaña del navegador y en Google -->
+<!-- Máximo 60 caracteres -->
+<title>DetallesCupido - Regalos y Detalles Románticos para Parejas</title>
+
+<!-- DESCRIPCIÓN: texto que aparece debajo del título en Google -->
+<!-- Máximo 155 caracteres -->
+<meta name="description"
+      content="Descubre regalos románticos, desayunos sorpresa, rosas eternas y cajas personalizadas en DetallesCupido. Sorprende a tu pareja con amor y estilo.">
+
+<!-- PALABRAS CLAVE -->
+<meta name="keywords"
+      content="Regalos, Detalles, amor, Parejas, Cajas Sorpresa, Rosas Eternas, Peluches, Desayunos Románticos, Personalizados, Envío a Domicilio">
+
+<!-- INSTRUCCIONES PARA LOS MOTORES DE BÚSQUEDA -->
+<meta name="robots" content="index, follow">
+
+<!-- AUTOR DEL SITIO -->
+<meta name="author" content="Daniel Ninahuanca">
+
+<!--  -->
+<!-- TIPO DE CONTENIDO -->
+<meta property="og:type"        content="website">
+
+<!-- URL CANÓNICA DE ESTA PÁGINA (debe ser absoluta) -->
+<meta property="og:url"         content="https://MI-DOMINIO.vercel.app/">
+
+<!-- TÍTULO PARA REDES SOCIALES -->
+<meta property="og:title"       content="DetallesCupido — Regalos y Detalles Románticos para Parejas">
+
+<!-- DESCRIPCIÓN PARA REDES SOCIALES -->
+<meta property="og:description" content="Regalos y Detalles Románticos para Parejas. Descubre cajas sorpresa, rosas eternas, peluches y desayunos románticos para enamorar. ¡Sorprende a tu ser querido hoy!">
+
+<!-- IMAGEN AL COMPARTIR (URL absoluta, mínimo 1200×630 px) -->
+<meta property="og:image"       content="https://MI-DOMINIO.vercel.app/img/preview.jpg">
+
+<!-- IDIOMA Y REGIÓN -->
+<meta property="og:locale"      content="es_PE">
+
+<!-- NOMBRE DEL SITIO -->
+<meta property="og:site_name"   content="DetallesCupido">
+
+<!-- Etiquetas Twitter / X -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="DetallesCupido — Regalos y Detalles Románticos para Parejas">
+<meta name="twitter:description" content="Regalos y Detalles Románticos para Parejas. Descubre cajas sorpresa, rosas eternas, peluches y desayunos románticos para enamorar. ¡Sorprende a tu ser querido hoy!">
+<meta name="twitter:image"       content="https://MI-DOMINIO.vercel.app/img/preview.jpg">
+
+<!-- ------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------- -->
+
+
+  <link rel="icon" type="image/svg+xml" href="../assets/img/logo/favicon.svg">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/catalogo.css">
+  <link rel="stylesheet" href="../css/carrito.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <aside class="topbar-romantica">
+    <span>💖 Envío GRATIS en compras mayores a S/ 150 &bull; Cupón <strong>AMOR10</strong> para 10% OFF 💖</span>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="header-navbar">
+    <div class="header-contenedor">
+      <a href="../index.html" class="nav-logo-link" aria-label="Inicio DetallesCupido">
+        <img src="../assets/img/logo/logo.svg" alt="DetallesCupido Logo" class="nav-logo-img">
+      </a>
+
+      <nav aria-label="Menú principal">
+        <ul class="nav-menu" id="nav-menu-lista">
+          <li><a href="../index.html" class="nav-item-link">Inicio</a></li>
+          <li><a href="catalogo.html" class="nav-item-link activo">Catálogo</a></li>
+          <li><a href="nosotros.html" class="nav-item-link">Nosotros</a></li>
+          <li><a href="../index.html#seccion-contacto" class="nav-item-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Buscador en Navbar -->
+      <div class="nav-buscador-wrapper">
+        <form id="nav-buscador-form" class="nav-buscador-caja">
+          <input type="text" id="nav-buscador-input" placeholder="Buscar en el catálogo..." autocomplete="off">
+          <button type="submit" class="nav-buscador-btn" aria-label="Buscar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
+        <div id="nav-sugerencias-box" class="nav-sugerencias-dropdown"></div>
+      </div>
+
+      <div class="nav-acciones">
+        <button type="button" class="nav-cart-btn" onclick="abrirMiniCarrito()" aria-label="Ver carrito">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-carrito" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="nav-toggle-btn" id="nav-toggle-btn" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="seccion-padding">
+    <div class="contenedor">
+      
+      <!-- Título de Sección -->
+      <div class="seccion-titulo-centro" style="margin-bottom: 2.5rem;">
+        <span class="subtitulo-romantico">Catálogo Exclusivo</span>
+        <h1 class="titulo-principal">Encuentra el Detalle <span>Perfecto</span></h1>
+        <p class="texto-descripcion">
+          Filtra por categoría, rango de precio o busca tu detalle ideal para crear un recuerdo inolvidable.
+        </p>
+      </div>
+
+      <!-- Barra de Filtros y Búsqueda -->
+      <div class="catalogo-filtros-barra">
+        <div class="catalogo-filtros-fila-superior">
+          
+          <!-- Buscador directo en catálogo -->
+          <div class="catalogo-buscador-caja">
+            <span class="catalogo-buscador-icono">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" id="buscador-input-catalogo" placeholder="Buscar por nombre, rosas, osos, tazas...">
+          </div>
+
+          <!-- Opciones: Precio y Orden -->
+          <div class="catalogo-filtros-opciones">
+            <!-- Filtro de Precio Slider -->
+            <div class="filtro-slider-grupo">
+              <label for="filtro-precio-slider">Precio máx:</label>
+              <input type="range" id="filtro-precio-slider" min="30" max="250" step="5" value="250">
+              <span class="filtro-precio-valor" id="filtro-precio-display">Hasta S/ 250.00</span>
+            </div>
+
+            <!-- Selector de Orden -->
+            <div class="catalogo-orden-grupo">
+              <label for="catalogo-orden-select">Ordenar por:</label>
+              <select id="catalogo-orden-select">
+                <option value="destacados">Recomendados Cupido</option>
+                <option value="precio-menor">Precio: Menor a Mayor</option>
+                <option value="precio-mayor">Precio: Mayor a Menor</option>
+                <option value="calificacion">Mejor Calificados</option>
+                <option value="nombre">Nombre (A - Z)</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pastillas de Categorías -->
+        <div class="catalogo-categorias-pills">
+          <button type="button" class="filtro-categoria-btn activo" data-categoria="todos">
+            ✨ Todos los Detalles
+          </button>
+          <button type="button" class="filtro-categoria-btn" data-categoria="cajas">
+            🎁 Cajas Sorpresa
+          </button>
+          <button type="button" class="filtro-categoria-btn" data-categoria="rosas">
+            🌹 Rosas &amp; Flores
+          </button>
+          <button type="button" class="filtro-categoria-btn" data-categoria="peluches">
+            🧸 Peluches
+          </button>
+          <button type="button" class="filtro-categoria-btn" data-categoria="personalizados">
+            🖼️ Personalizados
+          </button>
+          <button type="button" class="filtro-categoria-btn" data-categoria="desayunos">
+            ☕ Desayunos
+          </button>
+          <button type="button" class="filtro-categoria-btn" data-categoria="joyeria">
+            💍 Joyería
+          </button>
+        </div>
+      </div>
+
+      <!-- Contador de Resultados -->
+      <div class="catalogo-info-resultados" id="catalogo-contador-resultados">
+        Cargando regalos...
+      </div>
+
+      <!-- Grilla de Productos -->
+      <div class="productos-grid" id="catalogo-productos-grid">
+        <!-- Generado dinámicamente desde js/catalogo.js -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-seccion">
+    <div class="contenedor">
+      <div class="footer-grid">
+        <div class="footer-marca-col">
+          <a href="../index.html">
+            <img src="../assets/img/logo/logo.svg" alt="DetallesCupido" class="footer-logo-img">
+          </a>
+          <p>Transformamos emociones en sorpresas inolvidables para parejas. Envíos programados a domicilio.</p>
+          <div class="footer-redes">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="Instagram">📸</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="Facebook">📘</a>
+            <a href="https://wa.me/51987654321" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-enlaces-lista">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="carrito.html">Mi Carrito</a></li>
+            <li><a href="pago.html">Pagar Pedido</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Garantías</h4>
+          <ul class="footer-enlaces-lista">
+            <li><span>✓ Tarjeta con dedicatoria gratis</span></li>
+            <li><span>✓ Rosas naturales premium</span></li>
+            <li><span>✓ Entrega puntual programada</span></li>
+            <li><span>✓ Pagos seguros verificados</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto Inmediato</h4>
+          <div class="footer-contacto-info">
+            <div><span>💬</span> <span>WhatsApp: +51 987 654 321</span></div>
+            <div><span>✉️</span> <span>hola@detallescupido.com</span></div>
+            <div><span>⏰</span> <span>Atención: 8:00 AM - 9:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-inferior">
+      <div class="contenedor footer-inferior-contenedor">
+        <p class="footer-copyright">&copy; 2026 <strong>DetallesCupido</strong>. Todos los derechos reservados.</p>
+        <div class="footer-metodos-iconos">
+          <img src="../assets/img/iconos/yape.svg" alt="Yape" class="footer-metodo-badge">
+          <img src="../assets/img/iconos/plin.svg" alt="Plin" class="footer-metodo-badge">
+          <img src="../assets/img/iconos/visa.svg" alt="Visa" class="footer-metodo-badge">
+          <img src="../assets/img/iconos/mastercard.svg" alt="Mastercard" class="footer-metodo-badge">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/productos.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="../js/catalogo.js"></script>
+  <script src="../js/buscador.js"></script>
+
+  <script>
+    const toggleBtn = document.getElementById('nav-toggle-btn');
+    const navMenu = document.getElementById('nav-menu-lista');
+    if (toggleBtn && navMenu) {
+      toggleBtn.addEventListener('click', () => {
+        toggleBtn.classList.toggle('activo');
+        navMenu.classList.toggle('activo');
+      });
+    }
+  </script>
+</body>
+</html>

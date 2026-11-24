@@ -1,0 +1,218 @@
+/* ==========================================================================
+   DetallesCupido - Pie de Página (footer.css)
+   ========================================================================== */
+
+.footer-seccion {
+  background: #1A1A1A;
+  color: #D1D5DB;
+  padding-top: 5rem;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-seccion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-boton), var(--color-primario), var(--color-secundario));
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* Columna 1: Marca */
+.footer-marca-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-logo-img {
+  height: 44px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-marca-col p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #9CA3AF;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.red-social-btn {
+  width: 38px;
+  height: 38px;
+  background: #2B2B2B;
+  color: var(--color-blanco);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transicion-rapida);
+}
+
+.red-social-btn:hover {
+  background: var(--color-primario);
+  transform: translateY(-3px);
+}
+
+/* Columnas de Enlaces */
+.footer-col h4 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.25rem;
+  color: var(--color-blanco);
+  margin-bottom: 1.4rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35px;
+  height: 2px;
+  background: var(--color-primario);
+}
+
+.footer-enlaces-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-enlaces-lista li a {
+  color: #9CA3AF;
+  font-size: 0.92rem;
+  transition: all var(--transicion-rapida);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-enlaces-lista li a:hover {
+  color: var(--color-secundario);
+  transform: translateX(4px);
+}
+
+/* Columna 4: Newsletter y Horarios */
+.footer-contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #9CA3AF;
+}
+
+.footer-contacto-info div {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radio-full);
+  border: 1px solid #444;
+  background: #2B2B2B;
+  color: #FFF;
+  font-size: 0.88rem;
+}
+
+.newsletter-form input:focus {
+  border-color: var(--color-primario);
+}
+
+.newsletter-btn {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radio-full);
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.newsletter-btn:hover {
+  background: var(--color-boton);
+}
+
+/* Footer Bottom: Derechos y Métodos de Pago */
+.footer-inferior {
+  border-top: 1px solid #2B2B2B;
+  padding: 2rem 0;
+}
+
+.footer-inferior-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.footer-copyright strong {
+  color: var(--color-secundario);
+}
+
+.footer-metodos-iconos {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.footer-metodo-badge {
+  height: 26px;
+  width: auto;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   Responsive Footer
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-inferior-contenedor {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}

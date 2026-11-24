@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="pbg1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF1F5"/>
+      <stop offset="100%" stop-color="#FFE4EC"/>
+    </radialGradient>
+    <linearGradient id="box1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D62839"/>
+      <stop offset="100%" stop-color="#9E0C1B"/>
+    </linearGradient>
+    <linearGradient id="gold1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="16" fill="url(#pbg1)"/>
+  <!-- Floating mini hearts -->
+  <path d="M80 80 C80 70, 65 65, 58 73 C51 65, 36 70, 36 80 C36 95, 58 110, 58 110 C58 110, 80 95, 80 80 Z" fill="#F497B6" opacity="0.5"/>
+  <path d="M360 100 C360 92, 348 88, 342 94 C336 88, 324 92, 324 100 C324 112, 342 125, 342 125 C342 125, 360 112, 360 100 Z" fill="#FFD6E0"/>
+  <!-- Base Shadow -->
+  <ellipse cx="200" cy="330" rx="140" ry="25" fill="#2B2B2B" opacity="0.1"/>
+  <!-- Box Body -->
+  <rect x="100" y="180" width="200" height="140" rx="12" fill="url(#box1)"/>
+  <rect x="180" y="180" width="40" height="140" fill="url(#gold1)"/>
+  <!-- Chocolates & mini roses bursting out -->
+  <circle cx="150" cy="165" r="22" fill="#5D2E16"/>
+  <circle cx="150" cy="165" r="18" fill="#F59E0B" opacity="0.3"/>
+  <circle cx="200" cy="150" r="26" fill="#C1121F"/>
+  <circle cx="250" cy="165" r="22" fill="#5D2E16"/>
+  <circle cx="250" cy="165" r="18" fill="#F59E0B" opacity="0.3"/>
+  <!-- Lid tilted open -->
+  <g transform="rotate(-15 100 160)">
+    <rect x="80" y="145" width="230" height="32" rx="8" fill="#E23648"/>
+    <rect x="175" y="145" width="38" height="32" fill="url(#gold1)"/>
+    <!-- Big Bow -->
+    <circle cx="195" cy="140" r="12" fill="#F59E0B"/>
+    <path d="M195 140 C165 110, 130 130, 160 145 Z" fill="url(#gold1)"/>
+    <path d="M195 140 C225 110, 260 130, 230 145 Z" fill="url(#gold1)"/>
+  </g>
+</svg>

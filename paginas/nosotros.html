@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce la historia, misión, visión y valores de DetallesCupido. Somos cómplices de tu amor en cada detalle y sorpresa.">
+
+  <!--Sem15Interfaces - Etiquetas SEO -->
+
+  <!-- TÍTULO: aparece en la pestaña del navegador y en Google -->
+<!-- Máximo 60 caracteres -->
+<title>DetallesCupido - Regalos y Detalles Románticos para Parejas</title>
+
+<!-- DESCRIPCIÓN: texto que aparece debajo del título en Google -->
+<!-- Máximo 155 caracteres -->
+<meta name="description"
+      content="Descubre regalos románticos, desayunos sorpresa, rosas eternas y cajas personalizadas en DetallesCupido. Sorprende a tu pareja con amor y estilo.">
+
+<!-- PALABRAS CLAVE -->
+<meta name="keywords"
+      content="Regalos, Detalles, amor, Parejas, Cajas Sorpresa, Rosas Eternas, Peluches, Desayunos Románticos, Personalizados, Envío a Domicilio">
+
+<!-- INSTRUCCIONES PARA LOS MOTORES DE BÚSQUEDA -->
+<meta name="robots" content="index, follow">
+
+<!-- AUTOR DEL SITIO -->
+<meta name="author" content="Daniel Ninahuanca">
+
+<!--  -->
+<!-- TIPO DE CONTENIDO -->
+<meta property="og:type"        content="website">
+
+<!-- URL CANÓNICA DE ESTA PÁGINA (debe ser absoluta) -->
+<meta property="og:url"         content="https://MI-DOMINIO.vercel.app/">
+
+<!-- TÍTULO PARA REDES SOCIALES -->
+<meta property="og:title"       content="DetallesCupido — Regalos y Detalles Románticos para Parejas">
+
+<!-- DESCRIPCIÓN PARA REDES SOCIALES -->
+<meta property="og:description" content="Regalos y Detalles Románticos para Parejas. Descubre cajas sorpresa, rosas eternas, peluches y desayunos románticos para enamorar. ¡Sorprende a tu ser querido hoy!">
+
+<!-- IMAGEN AL COMPARTIR (URL absoluta, mínimo 1200×630 px) -->
+<meta property="og:image"       content="https://MI-DOMINIO.vercel.app/img/preview.jpg">
+
+<!-- IDIOMA Y REGIÓN -->
+<meta property="og:locale"      content="es_PE">
+
+<!-- NOMBRE DEL SITIO -->
+<meta property="og:site_name"   content="DetallesCupido">
+
+<!-- Etiquetas Twitter / X -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="DetallesCupido — Regalos y Detalles Románticos para Parejas">
+<meta name="twitter:description" content="Regalos y Detalles Románticos para Parejas. Descubre cajas sorpresa, rosas eternas, peluches y desayunos románticos para enamorar. ¡Sorprende a tu ser querido hoy!">
+<meta name="twitter:image"       content="https://MI-DOMINIO.vercel.app/img/preview.jpg">
+
+<!-- ------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------- -->
+
+
+  <link rel="icon" type="image/svg+xml" href="../assets/img/logo/favicon.svg">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/nosotros.css">
+  <link rel="stylesheet" href="../css/carrito.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <aside class="topbar-romantica">
+    <span>💖 Creando momentos inolvidables y sonrisas de amor desde el corazón 💖</span>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="header-navbar">
+    <div class="header-contenedor">
+      <a href="../index.html" class="nav-logo-link" aria-label="Inicio DetallesCupido">
+        <img src="../assets/img/logo/logo.svg" alt="DetallesCupido Logo" class="nav-logo-img">
+      </a>
+
+      <nav aria-label="Menú principal">
+        <ul class="nav-menu" id="nav-menu-lista">
+          <li><a href="../index.html" class="nav-item-link">Inicio</a></li>
+          <li><a href="catalogo.html" class="nav-item-link">Catálogo</a></li>
+          <li><a href="nosotros.html" class="nav-item-link activo">Nosotros</a></li>
+          <li><a href="../index.html#seccion-contacto" class="nav-item-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-acciones">
+        <button type="button" class="nav-cart-btn" onclick="abrirMiniCarrito()" aria-label="Ver carrito">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-carrito" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="nav-toggle-btn" id="nav-toggle-btn" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="seccion-padding">
+    <div class="contenedor">
+      
+      <!-- Título Superior -->
+      <div class="seccion-titulo-centro">
+        <span class="subtitulo-romantico">Nuestra Pasión</span>
+        <h1 class="titulo-principal">Cómplices de tu <span>Historia de Amor</span></h1>
+        <p class="texto-descripcion">
+          DetallesCupido nació para transformar los sentimientos más puros en experiencias físicas inolvidables que unen corazones.
+        </p>
+      </div>
+
+      <!-- Historia con Banner -->
+      <section class="nosotros-historia-grid">
+        <div class="nosotros-historia-texto">
+          <h2 style="font-family: var(--fuente-titulos); font-size: 2.2rem; color: var(--color-texto); line-height: 1.25;">
+            Cómo empezó este viaje de amor
+          </h2>
+          <p>
+            <strong>DetallesCupido</strong> nació de una idea sencilla pero poderosa: en un mundo digital acelerado, los gestos auténticos, tangibles y personalizados son los que dejan una huella imborrable en el corazón.
+          </p>
+          <p>
+            Todo comenzó con un pequeño taller artesanal preparando arreglos florales y cartas manuscritas para parejas que deseaban celebrar sus aniversarios de una forma especial y única. Al ver las lágrimas de felicidad, las sonrisas genuinas y los abrazos interminables de quienes recibían nuestras sorpresas, supimos que nuestra verdadera vocación no era vender regalos, sino <em>construir recuerdos eternos</em>.
+          </p>
+          <div class="cita-fundadora">
+            "No enviamos simples paquetes con lazos; enviamos suspiros, reconciliaciones, declaraciones y promesas cumplidas."
+          </div>
+        </div>
+
+        <div class="nosotros-banner-wrapper">
+          <img src="../assets/img/banner/nosotros-banner.svg" alt="Taller de amor y artesanía de DetallesCupido" class="nosotros-banner-img">
+        </div>
+      </section>
+
+      <!-- Misión y Visión -->
+      <section class="mision-vision-grid">
+        <div class="card-mision-vision">
+          <span class="icono-mision-vision">🎯</span>
+          <h3>Nuestra Misión</h3>
+          <p>
+            Ser el puente emocional entre dos personas que se aman, diseñando y entregando detalles románticos de alta gama, confeccionados a mano con materias primas premium, dedicatorias personalizadas y una puntualidad milimétrica que garantice una sorpresa perfecta.
+          </p>
+        </div>
+
+        <div class="card-mision-vision">
+          <span class="icono-mision-vision">🌟</span>
+          <h3>Nuestra Visión</h3>
+          <p>
+            Consolidarnos como el emprendimiento de regalos románticos y sorpresas para parejas más querido y confiable de la región, reconocidos por nuestra calidez humana, creatividad infinita, empatía con cada historia de amor y servicio de excelencia.
+          </p>
+        </div>
+      </section>
+
+      <!-- Valores -->
+      <section style="margin-bottom: 5rem;">
+        <div class="seccion-titulo-centro">
+          <span class="subtitulo-romantico">Nuestros Pilares</span>
+          <h2 class="titulo-principal">Valores que <span>Nos Guían</span></h2>
+          <p class="texto-descripcion">
+            Cada arreglo, cada lazo y cada palabra escrita reflejan el compromiso ético y emocional que asumimos con tu sorpresa.
+          </p>
+        </div>
+
+        <div class="valores-grid">
+          <div class="valor-card">
+            <div class="valor-icono">❤️</div>
+            <h4>Amor &amp; Dedicación</h4>
+            <p>Tratamos cada pedido como si fuera para nuestra propia persona favorita, cuidando cada detalle con el máximo cariño.</p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icono">✨</div>
+            <h4>Calidad Premium</h4>
+            <p>Seleccionamos rosas de exportación, chocolates artesanales gourmet y empaques elegantes que deslumbran al abrir.</p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icono">⏰</div>
+            <h4>Puntualidad Absoluta</h4>
+            <p>Sabemos que un momento romántico no puede esperar. Cumplimos con el día y horario pactado rigurosamente.</p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icono">🤝</div>
+            <h4>Empatía &amp; Complicidad</h4>
+            <p>Escuchamos tu historia, te asesoramos y guardamos la máxima discreción para que la sorpresa sea un éxito total.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proceso: Cómo Hacemos Magia -->
+      <section style="margin-bottom: 5rem;">
+        <div class="seccion-titulo-centro">
+          <span class="subtitulo-romantico">Detrás de Escena</span>
+          <h2 class="titulo-principal">¿Cómo Hacemos <span>Magia</span>?</h2>
+          <p class="texto-descripcion">
+            El paso a paso que asegura que tu regalo llegue fresco, impecable y listo para emocionar.
+          </p>
+        </div>
+
+        <div class="proceso-pasos-grid">
+          <div class="paso-item">
+            <span class="paso-numero-badge">1</span>
+            <h4>Selección Curada</h4>
+            <p>Elegimos a primera hora de la mañana las flores más frescas, peluches más suaves e insumos de la más alta calidad.</p>
+          </div>
+
+          <div class="paso-item">
+            <span class="paso-numero-badge">2</span>
+            <h4>Armado Artesanal</h4>
+            <p>Nuestras expertas arman la caja, combinan texturas y afinan la iluminación LED cálida en cada compartimento.</p>
+          </div>
+
+          <div class="paso-item">
+            <span class="paso-numero-badge">3</span>
+            <h4>Carta Manuscrita</h4>
+            <p>Imprimimos o redactamos tu dedicatoria especial en cartulina fina con sello de lacre rojo estilo romántico.</p>
+          </div>
+
+          <div class="paso-item">
+            <span class="paso-numero-badge">4</span>
+            <h4>Entrega Sorpresa</h4>
+            <p>Nuestros mensajeros entregan el regalo en la dirección exacta, capturando la emoción del momento si así lo deseas.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamado a la Acción -->
+      <section style="text-align: center; background: var(--color-blanco); padding: 4rem 2rem; border-radius: var(--radio-lg); box-shadow: var(--sombra-suave); border: 1px solid var(--color-gris-borde);">
+        <h2 style="font-family: var(--fuente-titulos); font-size: 2.2rem; color: var(--color-texto); margin-bottom: 1rem;">
+          ¿Listo para sorprender a quien hace latir tu corazón?
+        </h2>
+        <p style="color: #666; max-width: 580px; margin: 0 auto 2rem auto; font-size: 1.05rem;">
+          Permítenos ser parte de tu historia de amor y crear juntos un recuerdo que perdurará para siempre.
+        </p>
+        <a href="catalogo.html" class="btn-primario" style="font-size: 1.1rem; padding: 1rem 2.5rem;">
+          Explorar Catálogo de Regalos 🎁
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-seccion">
+    <div class="contenedor">
+      <div class="footer-grid">
+        <div class="footer-marca-col">
+          <a href="../index.html">
+            <img src="../assets/img/logo/logo.svg" alt="DetallesCupido" class="footer-logo-img">
+          </a>
+          <p>Transformamos emociones en sorpresas inolvidables para parejas. Envíos programados a domicilio.</p>
+          <div class="footer-redes">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="Instagram">📸</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="Facebook">📘</a>
+            <a href="https://wa.me/51987654321" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-enlaces-lista">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="carrito.html">Mi Carrito</a></li>
+            <li><a href="pago.html">Pagar Pedido</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Garantías</h4>
+          <ul class="footer-enlaces-lista">
+            <li><span>✓ Tarjeta con dedicatoria gratis</span></li>
+            <li><span>✓ Rosas frescas seleccionadas</span></li>
+            <li><span>✓ Entrega puntual programada</span></li>
+            <li><span>✓ Pagos seguros verificados</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto Inmediato</h4>
+          <div class="footer-contacto-info">
+            <div><span>💬</span> <span>WhatsApp: +51 987 654 321</span></div>
+            <div><span>✉️</span> <span>hola@detallescupido.com</span></div>
+            <div><span>⏰</span> <span>Atención: 8:00 AM - 9:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-inferior">
+      <div class="contenedor footer-inferior-contenedor">
+        <p class="footer-copyright">&copy; 2026 <strong>DetallesCupido</strong>. Todos los derechos reservados.</p>
+        <div class="footer-metodos-iconos">
+          <img src="../assets/img/iconos/yape.svg" alt="Yape" class="footer-metodo-badge">
+          <img src="../assets/img/iconos/plin.svg" alt="Plin" class="footer-metodo-badge">
+          <img src="../assets/img/iconos/visa.svg" alt="Visa" class="footer-metodo-badge">
+          <img src="../assets/img/iconos/mastercard.svg" alt="Mastercard" class="footer-metodo-badge">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/productos.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="../js/buscador.js"></script>
+
+  <script>
+    const toggleBtn = document.getElementById('nav-toggle-btn');
+    const navMenu = document.getElementById('nav-menu-lista');
+    if (toggleBtn && navMenu) {
+      toggleBtn.addEventListener('click', () => {
+        toggleBtn.classList.toggle('activo');
+        navMenu.classList.toggle('activo');
+      });
+    }
+  </script>
+</body>
+</html>

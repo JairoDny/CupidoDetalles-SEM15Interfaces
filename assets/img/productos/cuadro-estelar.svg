@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="pbg8" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5F7"/>
+      <stop offset="100%" stop-color="#FEDBE4"/>
+    </radialGradient>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="50%" stop-color="#1C2541"/>
+      <stop offset="100%" stop-color="#090A0F"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="16" fill="url(#pbg8)"/>
+  <!-- Shadow -->
+  <ellipse cx="200" cy="355" rx="110" ry="18" fill="#2B2B2B" opacity="0.12"/>
+  <!-- Outer Wooden/Black Frame -->
+  <rect x="100" y="50" width="200" height="280" rx="6" fill="#1F2937" stroke="#111827" stroke-width="4"/>
+  <!-- White Matting / Passepartout -->
+  <rect x="115" y="65" width="170" height="250" fill="#FFFFFF"/>
+  <!-- Night Sky Celestial Map Circle -->
+  <circle cx="200" cy="165" r="65" fill="url(#nightSky)"/>
+  <circle cx="200" cy="165" r="67" fill="none" stroke="#E5E7EB" stroke-width="1.5"/>
+  <!-- Constellation Stars & Lines -->
+  <g stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="0.8">
+    <line x1="165" y1="140" x2="185" y2="155"/>
+    <line x1="185" y1="155" x2="210" y2="145"/>
+    <line x1="210" y1="145" x2="235" y2="160"/>
+    <line x1="185" y1="155" x2="195" y2="185"/>
+    <line x1="195" y1="185" x2="225" y2="195"/>
+  </g>
+  <!-- Tiny stars -->
+  <circle cx="165" cy="140" r="2" fill="#FFFFFF"/>
+  <circle cx="185" cy="155" r="2.5" fill="#FFFFFF"/>
+  <circle cx="210" cy="145" r="2" fill="#FCD34D"/>
+  <circle cx="235" cy="160" r="2" fill="#FFFFFF"/>
+  <circle cx="195" cy="185" r="2" fill="#FFFFFF"/>
+  <circle cx="225" cy="195" r="2.5" fill="#FCD34D"/>
+  <circle cx="150" cy="180" r="1" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="240" cy="130" r="1.2" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="170" cy="205" r="1" fill="#FFFFFF" opacity="0.5"/>
+  <!-- Frame Texts -->
+  <text x="200" y="255" font-family="'Playfair Display', serif" font-weight="700" font-size="12" fill="#1F2937" text-anchor="middle">Bajo las mismas estrellas</text>
+  <text x="200" y="272" font-family="'Poppins', sans-serif" font-weight="600" font-size="9" fill="#D62839" text-anchor="middle">La noche que todo comenzó</text>
+  <text x="200" y="286" font-family="'Poppins', sans-serif" font-size="7.5" fill="#6B7280" text-anchor="middle">14 de Febrero • 12° 02' S 77° 01' O</text>
+</svg>

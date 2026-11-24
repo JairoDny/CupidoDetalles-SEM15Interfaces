@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DetallesCupido - Tu tienda online de regalos románticos, desayunos sorpresa, rosas eternas, cajas personalizadas y peluches para enamorar.">
+  <meta name="theme-color" content="#D62839">
+
+  <!--Sem15Interfaces - Etiquetas SEO -->
+
+  <!-- TÍTULO: aparece en la pestaña del navegador y en Google -->
+<!-- Máximo 60 caracteres -->
+<title>DetallesCupido - Regalos y Detalles Románticos para Parejas</title>
+
+<!-- DESCRIPCIÓN: texto que aparece debajo del título en Google -->
+<!-- Máximo 155 caracteres -->
+<meta name="description"
+      content="Descubre regalos románticos, desayunos sorpresa, rosas eternas y cajas personalizadas en DetallesCupido. Sorprende a tu pareja con amor y estilo.">
+
+<!-- PALABRAS CLAVE -->
+<meta name="keywords"
+      content="Regalos, Detalles, amor, Parejas, Cajas Sorpresa, Rosas Eternas, Peluches, Desayunos Románticos, Personalizados, Envío a Domicilio">
+
+<!-- INSTRUCCIONES PARA LOS MOTORES DE BÚSQUEDA -->
+<meta name="robots" content="index, follow">
+
+<!-- AUTOR DEL SITIO -->
+<meta name="author" content="Daniel Ninahuanca">
+
+<!--  -->
+<!-- TIPO DE CONTENIDO -->
+<meta property="og:type"        content="website">
+
+<!-- URL CANÓNICA DE ESTA PÁGINA (debe ser absoluta) -->
+<meta property="og:url"         content="https://MI-DOMINIO.vercel.app/">
+
+<!-- TÍTULO PARA REDES SOCIALES -->
+<meta property="og:title"       content="DetallesCupido — Regalos y Detalles Románticos para Parejas">
+
+<!-- DESCRIPCIÓN PARA REDES SOCIALES -->
+<meta property="og:description" content="Regalos y Detalles Románticos para Parejas. Descubre cajas sorpresa, rosas eternas, peluches y desayunos románticos para enamorar. ¡Sorprende a tu ser querido hoy!">
+
+<!-- IMAGEN AL COMPARTIR (URL absoluta, mínimo 1200×630 px) -->
+<meta property="og:image"       content="https://MI-DOMINIO.vercel.app/img/preview.jpg">
+
+<!-- IDIOMA Y REGIÓN -->
+<meta property="og:locale"      content="es_PE">
+
+<!-- NOMBRE DEL SITIO -->
+<meta property="og:site_name"   content="DetallesCupido">
+
+<!-- Etiquetas Twitter / X -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="DetallesCupido — Regalos y Detalles Románticos para Parejas">
+<meta name="twitter:description" content="Regalos y Detalles Románticos para Parejas. Descubre cajas sorpresa, rosas eternas, peluches y desayunos románticos para enamorar. ¡Sorprende a tu ser querido hoy!">
+<meta name="twitter:image"       content="https://MI-DOMINIO.vercel.app/img/preview.jpg">
+
+<!-- ------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------- -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon.svg">
+
+  <!-- Estilos CSS Modulares -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/catalogo.css">
+  <link rel="stylesheet" href="css/carrito.css">
+  <link rel="stylesheet" href="css/nosotros.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- Barra de Anuncio Romántica Superior -->
+  <aside class="topbar-romantica">
+    <span>💖 ¡Envío Gratis por compras mayores a S/ 150! Usa el cupón <strong>AMOR10</strong> para un 10% de descuento. 💖</span>
+  </aside>
+
+  <!-- Barra de Navegación (Navbar) -->
+  <header class="header-navbar">
+    <div class="header-contenedor">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo-link" aria-label="Ir al inicio de DetallesCupido">
+        <img src="assets/img/logo/logo.svg" alt="DetallesCupido Logo" class="nav-logo-img">
+      </a>
+
+      <!-- Menú de Enlaces -->
+      <nav aria-label="Menú principal">
+        <ul class="nav-menu" id="nav-menu-lista">
+          <li><a href="index.html" class="nav-item-link activo">Inicio</a></li>
+          <li><a href="paginas/catalogo.html" class="nav-item-link">Catálogo</a></li>
+          <li><a href="paginas/nosotros.html" class="nav-item-link">Nosotros</a></li>
+          <li><a href="#seccion-contacto" class="nav-item-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Buscador Predictivo en Navbar -->
+      <div class="nav-buscador-wrapper">
+        <form id="nav-buscador-form" class="nav-buscador-caja" role="search">
+          <input type="text" id="nav-buscador-input" placeholder="Buscar regalo o sorpresa..." autocomplete="off">
+          <button type="submit" class="nav-buscador-btn" aria-label="Buscar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
+        <div id="nav-sugerencias-box" class="nav-sugerencias-dropdown"></div>
+      </div>
+
+      <!-- Acciones: Carrito y Menú Móvil -->
+      <div class="nav-acciones">
+        <button type="button" class="nav-cart-btn" onclick="abrirMiniCarrito()" aria-label="Abrir carrito de compras">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-carrito" style="display: none;">0</span>
+        </button>
+
+        <button type="button" class="nav-toggle-btn" id="nav-toggle-btn" aria-label="Alternar menú móvil">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         1. Hero Section (Portada Principal)
+         ========================================================================== -->
+    <section class="hero-seccion efecto-corazones-bg">
+      <div class="contenedor hero-contenedor">
+        
+        <div class="hero-contenido">
+          <div class="hero-badge-novedad">
+            <span class="icono-corazon">💘</span>
+            <span>Especialistas en crear momentos inolvidables</span>
+          </div>
+
+          <h1 class="hero-titulo">
+            Haz latir su corazón con un <span class="texto-acento">Detalle Cupido</span>
+          </h1>
+
+          <p class="hero-frase">
+            "Cada detalle cuenta cuando se trata de demostrar amor."
+          </p>
+
+          <div class="hero-botones">
+            <a href="paginas/catalogo.html" class="btn-primario">
+              Ver Catálogo Completo
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="paginas/catalogo.html?categoria=cajas" class="btn-secundario">
+              Comprar Ahora 🎁
+            </a>
+          </div>
+
+          <div class="hero-estadisticas">
+            <div class="stat-item">
+              <span class="stat-numero">+5,000</span>
+              <span class="stat-texto">Sonrisas entregadas</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-numero">100%</span>
+              <span class="stat-texto">Amor y dedicación</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-numero">Puntual</span>
+              <span class="stat-texto">Entrega programada</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-banner-wrapper">
+          <img src="assets/img/banner/hero-banner.svg" alt="Caja de regalo romántica de DetallesCupido" class="hero-imagen-principal">
+          
+          <div class="hero-tarjeta-flotante">
+            <div class="icono-tarjeta-flotante">💌</div>
+            <div class="info-tarjeta-flotante">
+              <strong>Dedicatoria Romántica</strong>
+              <span>¡Totalmente GRATIS en tu pedido!</span>
+            </div>
+          </div>
+
+          <div class="hero-decoracion-circulo"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Beneficios / Por Qué Elegirnos
+         ========================================================================== -->
+    <section class="seccion-padding" style="background: var(--color-blanco);">
+      <div class="contenedor">
+        <div class="valores-grid" style="margin-bottom: 0;">
+          <div class="valor-card">
+            <div class="valor-icono">🌹</div>
+            <h4>Calidad Premium</h4>
+            <p>Rosas frescas de exportación, chocolates finos y acabados de lujo en cada detalle.</p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icono">💌</div>
+            <h4>Dedicatoria Personalizada</h4>
+            <p>Escribimos tus sentimientos en una elegante tarjeta que acompañará tu sorpresa.</p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icono">⏰</div>
+            <h4>Entrega Puntual</h4>
+            <p>Tú eliges el día y el rango de horario exacto para sorprender a quien más amas.</p>
+          </div>
+
+          <div class="valor-card">
+            <div class="valor-icono">🔒</div>
+            <h4>Pagos 100% Seguros</h4>
+            <p>Paga fácilmente por Yape, Plin, tarjetas de crédito/débito o transferencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. Catálogo Destacado (Productos Populares)
+         ========================================================================== -->
+    <section class="seccion-padding" id="seccion-destacados">
+      <div class="contenedor">
+        <div class="seccion-titulo-centro">
+          <span class="subtitulo-romantico">Favoritos de las Parejas</span>
+          <h2 class="titulo-principal">Nuestros Detalles <span>Más Enamoradores</span></h2>
+          <p class="texto-descripcion">
+            Regalos cuidadosamente preparados para aniversarios, cumpleaños, San Valentín o simplemente para recordarle cuánto le amas.
+          </p>
+        </div>
+
+        <!-- Grilla de Productos Destacados -->
+        <div class="productos-grid" id="productos-destacados-grid">
+          <!-- Renderizado dinámico desde js/catalogo.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="paginas/catalogo.html" class="btn-primario" style="padding: 1rem 2.5rem; font-size: 1.05rem;">
+            Explorar Todo el Catálogo de Regalos
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Banner Promocional Romántico
+         ========================================================================== -->
+    <section class="contenedor" style="margin-bottom: 5rem;">
+      <a href="paginas/catalogo.html?categoria=personalizados" style="display: block;">
+        <img src="assets/img/banner/banner-promo.svg" alt="Promoción especial DetallesCupido con cupón AMOR10" style="width: 100%; border-radius: var(--radio-lg); box-shadow: var(--sombra-media);">
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         3. Métodos de Pago Visuales
+         ========================================================================== -->
+    <section class="seccion-padding" style="background: var(--color-blanco);">
+      <div class="contenedor">
+        <div class="seccion-titulo-centro">
+          <span class="subtitulo-romantico">Facilidad y Seguridad</span>
+          <h2 class="titulo-principal">Métodos de Pago <span>Aceptados</span></h2>
+          <p class="texto-descripcion">
+            Elige la forma de pago que más te acomode. Todas nuestras transacciones son rápidas, transparentes y 100% seguras.
+          </p>
+        </div>
+
+        <div class="metodos-pago-opciones-grid" style="max-width: 900px; margin: 0 auto 3rem auto;">
+          <div class="opcion-metodo-pago">
+            <img src="assets/img/iconos/yape.svg" alt="Yape" class="logo-metodo">
+            <span>Yape</span>
+          </div>
+          <div class="opcion-metodo-pago">
+            <img src="assets/img/iconos/plin.svg" alt="Plin" class="logo-metodo">
+            <span>Plin</span>
+          </div>
+          <div class="opcion-metodo-pago">
+            <img src="assets/img/iconos/visa.svg" alt="Visa" class="logo-metodo">
+            <span>Visa</span>
+          </div>
+          <div class="opcion-metodo-pago">
+            <img src="assets/img/iconos/mastercard.svg" alt="Mastercard" class="logo-metodo">
+            <span>Mastercard</span>
+          </div>
+          <div class="opcion-metodo-pago">
+            <img src="assets/img/iconos/transferencia.svg" alt="Transferencia Bancaria" class="logo-metodo">
+            <span>Transferencias</span>
+          </div>
+          <div class="opcion-metodo-pago">
+            <img src="assets/img/iconos/efectivo.svg" alt="Contraentrega" class="logo-metodo">
+            <span>Contraentrega</span>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <p style="color: #666; font-size: 0.95rem;">
+            ¿Prefieres coordinar tu compra directamente con un asesor de amor?
+            <a href="https://wa.me/51987654321?text=Hola%20DetallesCupido,%20deseo%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" style="color: var(--color-primario); font-weight: 700; text-decoration: underline;">
+              Escríbenos por WhatsApp aquí &rarr;
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. Testimonios de Parejas Enamoradas
+         ========================================================================== -->
+    <section class="seccion-padding">
+      <div class="contenedor">
+        <div class="seccion-titulo-centro">
+          <span class="subtitulo-romantico">Historias Reales</span>
+          <h2 class="titulo-principal">Parejas que <span>Enamoramos</span></h2>
+          <p class="texto-descripcion">
+            Cada entrega es una experiencia cargada de lágrimas de felicidad, abrazos y recuerdos eternos.
+          </p>
+        </div>
+
+        <div class="testimonios-grid">
+          <div class="testimonio-card">
+            <div class="testimonio-estrellas">★★★★★</div>
+            <p class="testimonio-texto">
+              "Pedí la Caja Sorpresa con rosas y chocolates para nuestro aniversario. Llegó puntual en la mañana y mi novia lloró de la emoción. La presentación es de otro nivel."
+            </p>
+            <div class="testimonio-autor">
+              <div class="avatar-pareja">👩‍❤️‍👨</div>
+              <div class="autor-info">
+                <strong>Carlos &amp; Andrea</strong>
+                <span>Caja Sorpresa Romántica</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <div class="testimonio-estrellas">★★★★★</div>
+            <p class="testimonio-texto">
+              "La Rosa Eterna en cúpula de cristal es simplemente mágica, tal cual la película. Las luces LED le dan un brillo de ensueño en la noche. 100% recomendados."
+            </p>
+            <div class="testimonio-autor">
+              <div class="avatar-pareja">💍</div>
+              <div class="autor-info">
+                <strong>Diego Morales</strong>
+                <span>Rosa Eterna de Cristal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <div class="testimonio-estrellas">★★★★★</div>
+            <p class="testimonio-texto">
+              "Sorprendí a mi esposo con el Desayuno Gourmet en su cumpleaños de oficina. La atención por WhatsApp fue muy amable y la comida deliciosa y fresca."
+            </p>
+            <div class="testimonio-autor">
+              <div class="avatar-pareja">🧇</div>
+              <div class="autor-info">
+                <strong>Valeria Rojas</strong>
+                <span>Desayuno Sorpresa de Ensueño</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. Sección Contacto Rápido
+         ========================================================================== -->
+    <section class="seccion-padding" id="seccion-contacto" style="background: var(--color-blanco);">
+      <div class="contenedor">
+        <div class="nosotros-historia-grid" style="margin-bottom: 0;">
+          <div class="nosotros-historia-texto">
+            <span class="subtitulo-romantico">Estamos para Ayudarte</span>
+            <h2 class="titulo-principal">¿Tienes una <span>Idea Especial</span>?</h2>
+            <p>
+              En DetallesCupido nos encanta personalizar cada sorpresa. Si deseas armar un pack a tu gusto, cambiar colores de flores o programar una entrega a medianoche, ¡cuéntanos tu idea!
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.8rem; margin: 1rem 0;">
+              <p>📍 <strong>Atención:</strong> Lima Metropolitana y Envíos a todo el Perú</p>
+              <p>⏰ <strong>Horario:</strong> Lunes a Domingo de 8:00 AM a 9:00 PM</p>
+              <p>💬 <strong>WhatsApp Oficial:</strong> +51 987 654 321</p>
+              <p>✉️ <strong>Correo:</strong> hola@detallescupido.com</p>
+            </div>
+            <div>
+              <a href="https://wa.me/51987654321?text=Hola,%20deseo%20personalizar%20un%20regalo%20rom%C3%A1ntico" target="_blank" rel="noopener noreferrer" class="btn-primario" style="background: var(--color-whatsapp); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.288.043.088.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z"/>
+                </svg>
+                Hablar con un Asesor de Amor
+              </a>
+            </div>
+          </div>
+
+          <div style="background: var(--color-fondo); padding: 2.5rem; border-radius: var(--radio-lg); border: 1px solid var(--color-gris-borde);">
+            <h3 style="font-family: var(--fuente-titulos); font-size: 1.5rem; margin-bottom: 1.2rem; color: var(--color-texto);">
+              Envíanos un Mensaje
+            </h3>
+            <form onsubmit="event.preventDefault(); mostrarToast('¡Mensaje enviado con éxito! Nos comunicaremos contigo muy pronto.', 'exito'); this.reset();">
+              <div class="form-grupo">
+                <label>Tu Nombre:</label>
+                <input type="text" required placeholder="Ej: Sofía Mendoza">
+              </div>
+              <div class="form-grupo">
+                <label>Tu Teléfono / WhatsApp:</label>
+                <input type="tel" required placeholder="Ej: 987 654 321">
+              </div>
+              <div class="form-grupo">
+                <label>¿Qué detalle tienes en mente?:</label>
+                <textarea rows="3" required placeholder="Cuéntanos fecha, ocasión o detalles personalizados..."></textarea>
+              </div>
+              <button type="submit" class="btn-primario btn-bloque">
+                Enviar Consulta 💌
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Pie de Página (Footer)
+       ========================================================================== -->
+  <footer class="footer-seccion">
+    <div class="contenedor">
+      <div class="footer-grid">
+        <!-- Columna Marca -->
+        <div class="footer-marca-col">
+          <a href="index.html">
+            <img src="assets/img/logo/logo.svg" alt="DetallesCupido" class="footer-logo-img">
+          </a>
+          <p>
+            Emprendimiento dedicado a transformar emociones en recuerdos tangibles. Regalos premium para parejas, aniversarios y momentos mágicos.
+          </p>
+          <div class="footer-redes">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="Instagram">📸</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="Facebook">📘</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="TikTok">🎵</a>
+            <a href="https://wa.me/51987654321" target="_blank" rel="noopener noreferrer" class="red-social-btn" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <!-- Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-enlaces-lista">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="paginas/catalogo.html">Catálogo Completo</a></li>
+            <li><a href="paginas/nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="paginas/carrito.html">Mi Carrito</a></li>
+            <li><a href="paginas/pago.html">Finalizar Compra</a></li>
+          </ul>
+        </div>
+
+        <!-- Categorías Populares -->
+        <div class="footer-col">
+          <h4>Categorías</h4>
+          <ul class="footer-enlaces-lista">
+            <li><a href="paginas/catalogo.html?categoria=cajas">Cajas Sorpresa</a></li>
+            <li><a href="paginas/catalogo.html?categoria=rosas">Rosas &amp; Flores</a></li>
+            <li><a href="paginas/catalogo.html?categoria=peluches">Peluches Gigantes</a></li>
+            <li><a href="paginas/catalogo.html?categoria=personalizados">Regalos Personalizados</a></li>
+            <li><a href="paginas/catalogo.html?categoria=desayunos">Desayunos Románticos</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contacto -->
+        <div class="footer-col">
+          <h4>Club de Enamorados</h4>
+          <p style="font-size: 0.88rem; color: #9CA3AF; margin-bottom: 0.8rem;">
+            Suscríbete y recibe promociones exclusivas, recordatorios de aniversario y 10% de descuento.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); mostrarToast('¡Bienvenido al Club DetallesCupido! Tu cupón es AMOR10', 'exito'); this.reset();">
+            <input type="email" placeholder="Tu correo electrónico..." required>
+            <button type="submit" class="newsletter-btn">Unirme</button>
+          </form>
+          <div class="footer-contacto-info" style="margin-top: 1.5rem;">
+            <div><span>📍</span> <span>Lima Metropolitana y Envíos Nacionales</span></div>
+            <div><span>⏰</span> <span>Lun - Dom: 8:00 AM - 9:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra Inferior de Derechos y Pagos -->
+    <div class="footer-inferior">
+      <div class="contenedor footer-inferior-contenedor">
+        <p class="footer-copyright">
+          &copy; 2026 <strong>DetallesCupido</strong>. Todos los derechos reservados. Hecho con ❤️ para enamorar.
+        </p>
+        <div class="footer-metodos-iconos">
+          <img src="assets/img/iconos/yape.svg" alt="Yape" class="footer-metodo-badge">
+          <img src="assets/img/iconos/plin.svg" alt="Plin" class="footer-metodo-badge">
+          <img src="assets/img/iconos/visa.svg" alt="Visa" class="footer-metodo-badge">
+          <img src="assets/img/iconos/mastercard.svg" alt="Mastercard" class="footer-metodo-badge">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Modulares -->
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/catalogo.js"></script>
+  <script src="js/buscador.js"></script>
+
+  <script>
+    // Toggle menú móvil
+    const toggleBtn = document.getElementById('nav-toggle-btn');
+    const navMenu = document.getElementById('nav-menu-lista');
+    if (toggleBtn && navMenu) {
+      toggleBtn.addEventListener('click', () => {
+        toggleBtn.classList.toggle('activo');
+        navMenu.classList.toggle('activo');
+      });
+    }
+  </script>
+</body>
+</html>

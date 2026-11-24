@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="pbg6" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#221526"/>
+      <stop offset="100%" stop-color="#120A16"/>
+    </radialGradient>
+    <linearGradient id="wineBottle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D1115"/>
+      <stop offset="40%" stop-color="#6B1D28"/>
+      <stop offset="100%" stop-color="#1A0A0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="16" fill="url(#pbg6)"/>
+  <!-- Candle Glow -->
+  <circle cx="90" cy="270" r="35" fill="#FCD34D" opacity="0.25"/>
+  <circle cx="310" cy="270" r="35" fill="#FCD34D" opacity="0.25"/>
+  <!-- Shadow -->
+  <ellipse cx="200" cy="350" rx="160" ry="25" fill="#000000" opacity="0.5"/>
+  <!-- Wine Bottle -->
+  <g transform="translate(130, 130)">
+    <!-- Neck -->
+    <rect x="25" y="0" width="20" height="45" fill="#1A0A0C"/>
+    <rect x="23" y="5" width="24" height="15" fill="#D4AF37"/>
+    <!-- Body -->
+    <path d="M25 45 Q5 80 5 110 L5 210 L65 210 L65 110 Q65 80 45 45 Z" fill="url(#wineBottle)"/>
+    <!-- Gold Label -->
+    <rect x="10" y="105" width="50" height="70" rx="4" fill="#FDF8EC"/>
+    <rect x="14" y="110" width="42" height="60" stroke="#D4AF37" stroke-width="1" fill="none"/>
+    <path d="M35 125 C35 120, 28 118, 25 122 C22 118, 15 120, 15 125 C15 132, 25 140, 25 140 C25 140, 35 132, 35 125 Z" fill="#C1121F" transform="translate(10, 0) scale(0.6)"/>
+    <text x="35" y="145" font-family="'Playfair Display', serif" font-size="8" font-weight="700" fill="#2B2B2B" text-anchor="middle">AMOR</text>
+    <text x="35" y="155" font-family="'Poppins', sans-serif" font-size="5" fill="#999" text-anchor="middle">RESERVA</text>
+  </g>
+  <!-- Two Wine Glasses Toasting -->
+  <g transform="translate(205, 175)">
+    <!-- Glass 1 -->
+    <path d="M10 20 Q10 70 35 70 Q60 70 60 20 Z" fill="#FFFFFF" fill-opacity="0.15" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2"/>
+    <path d="M14 42 Q14 66 35 66 Q56 66 56 42 Z" fill="#800020" opacity="0.8"/>
+    <line x1="35" y1="70" x2="35" y2="120" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3"/>
+    <ellipse cx="35" cy="120" rx="20" ry="5" fill="#FFFFFF" fill-opacity="0.3"/>
+    <!-- Glass 2 -->
+    <g transform="translate(55, 10) rotate(-10)">
+      <path d="M10 20 Q10 70 35 70 Q60 70 60 20 Z" fill="#FFFFFF" fill-opacity="0.15" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="2"/>
+      <path d="M14 42 Q14 66 35 66 Q56 66 56 42 Z" fill="#800020" opacity="0.8"/>
+      <line x1="35" y1="70" x2="35" y2="120" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="3"/>
+      <ellipse cx="35" cy="120" rx="20" ry="5" fill="#FFFFFF" fill-opacity="0.3"/>
+    </g>
+    <!-- Clink Sparkle -->
+    <polygon points="58,185 60,180 62,185 67,187 62,189 60,194 58,189 53,187" fill="#FCD34D" transform="translate(0, -170)"/>
+  </g>
+  <!-- Aromatic Candles -->
+  <rect x="75" y="275" width="30" height="50" rx="4" fill="#FFF5EE"/>
+  <ellipse cx="90" cy="275" rx="15" ry="5" fill="#F2E6DC"/>
+  <path d="M90 270 Q92 258 90 252 Q87 258 90 270 Z" fill="#F59E0B"/>
+  <circle cx="90" cy="265" r="3" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1F5"/>
+      <stop offset="100%" stop-color="#FFD6E0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="24" fill="url(#nBg)"/>
+
+  <!-- Workshop / Love Workshop Illustration -->
+  <g transform="translate(400, 240)">
+    <!-- Big Heart -->
+    <path d="M0 -60 C0 -110, -70 -120, -100 -80 C-130 -40, -130 10, -80 50 L0 120 L80 50 C130 10, 130 -40, 100 -80 C70 -120, 0 -110, 0 -60 Z" fill="#D62839" opacity="0.15"/>
+    <path d="M0 -40 C0 -80, -50 -90, -75 -60 C-100 -30, -100 10, -60 40 L0 95 L60 40 C100 10, 100 -30, 75 -60 C50 -90, 0 -80, 0 -40 Z" fill="#D62839" opacity="0.85"/>
+    <!-- Hands holding heart or bow ribbon -->
+    <path d="M-60 40 C-80 80, -30 100, 0 110 C30 100, 80 80, 60 40" fill="none" stroke="#FCD34D" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="0" cy="110" r="16" fill="#F59E0B"/>
+    <!-- Heart sparkles -->
+    <circle cx="-50" cy="-30" r="6" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="-40" cy="-45" r="3" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+
+  <!-- Letter / Envelope with Seal -->
+  <g transform="translate(180, 280)">
+    <rect x="0" y="0" width="120" height="80" rx="8" fill="#FFFFFF" stroke="#F497B6" stroke-width="3"/>
+    <polygon points="0,0 60,45 120,0" fill="#FFF1F5" stroke="#F497B6" stroke-width="2"/>
+    <circle cx="60" cy="45" r="14" fill="#C1121F"/>
+    <path d="M60 41 C60 38, 56 36, 53 38 C50 40, 50 43, 53 46 L60 52 L67 46 C70 43, 70 40, 67 38 C64 36, 60 38, 60 41 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Bouquet of Flowers on Right -->
+  <g transform="translate(560, 250)">
+    <path d="M30 60 L10 130 L50 130 Z" fill="#D62839" opacity="0.3"/>
+    <circle cx="15" cy="40" r="22" fill="#D62839"/>
+    <circle cx="45" cy="35" r="24" fill="#F497B6"/>
+    <circle cx="30" cy="15" r="20" fill="#C1121F"/>
+    <circle cx="30" cy="50" r="18" fill="#FFD6E0"/>
+    <circle cx="30" cy="35" r="10" fill="#FCD34D"/>
+    <!-- Wrap paper -->
+    <polygon points="5,70 55,70 38,125 22,125" fill="#EAD7C5"/>
+    <path d="M15 95 L45 95" stroke="#C1121F" stroke-width="3"/>
+  </g>
+</svg>

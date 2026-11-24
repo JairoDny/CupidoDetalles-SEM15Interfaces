@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="pbg12" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#FED8E3"/>
+    </radialGradient>
+    <linearGradient id="blackBeads" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B5563"/>
+      <stop offset="50%" stop-color="#1F2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="whiteBeads" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F3F4F6"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="16" fill="url(#pbg12)"/>
+  <!-- Velvet Presentation Pillow/Cushion -->
+  <rect x="70" y="80" width="260" height="240" rx="28" fill="#1C1917" stroke="#292524" stroke-width="4"/>
+  <rect x="80" y="90" width="240" height="220" rx="20" fill="#292524"/>
+  <ellipse cx="200" cy="350" rx="130" ry="20" fill="#2B2B2B" opacity="0.12"/>
+  <!-- Left Bracelet: Matte Black with Crown & Magnetic Half Heart -->
+  <ellipse cx="160" cy="200" rx="45" ry="70" fill="none" stroke="url(#blackBeads)" stroke-width="18" stroke-linecap="round"/>
+  <!-- Right Bracelet: White Howlite Marble with Crown & Magnetic Half Heart -->
+  <ellipse cx="240" cy="200" rx="45" ry="70" fill="none" stroke="url(#whiteBeads)" stroke-width="18" stroke-linecap="round"/>
+  <!-- Central Magnetic Bell / Heart that connects them -->
+  <circle cx="200" cy="200" r="14" fill="#D4AF37"/>
+  <path d="M200 193 C200 188, 194 185, 190 188 C186 191, 186 197, 190 201 L200 208 L210 201 C214 197, 214 191, 210 188 C206 185, 200 188, 200 193 Z" fill="#C1121F" transform="scale(0.8) translate(50, 47)"/>
+  <!-- Crown Charm on Black -->
+  <polygon points="112,192 110,205 125,205 123,192 117.5,197" fill="#D4AF37"/>
+  <!-- Crown Charm on White -->
+  <polygon points="288,192 290,205 275,205 277,192 282.5,197" fill="#D4AF37"/>
+  <!-- Brand text tag on pillow -->
+  <text x="200" y="275" font-family="'Playfair Display', serif" font-weight="700" font-size="12" fill="#D4AF37" text-anchor="middle">Amor Infinito</text>
+  <text x="200" y="290" font-family="'Poppins', sans-serif" font-size="8" fill="#A8A29E" text-anchor="middle">Pulseras Magnéticas de Pareja</text>
+</svg>

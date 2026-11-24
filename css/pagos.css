@@ -1,0 +1,480 @@
+/* ==========================================================================
+   DetallesCupido - Métodos de Pago y Checkout (pagos.css)
+   ========================================================================== */
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+/* Pasos del Formulario de Checkout */
+.checkout-formulario-box {
+  background: var(--color-blanco);
+  border-radius: var(--radio-lg);
+  padding: 2.5rem;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid var(--color-gris-borde);
+}
+
+.checkout-bloque-seccion {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #FFF1F5;
+}
+
+.checkout-bloque-seccion:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.checkout-bloque-titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--fuente-titulos);
+  font-size: 1.35rem;
+  color: var(--color-texto);
+  margin-bottom: 1.4rem;
+}
+
+.paso-numero {
+  width: 32px;
+  height: 32px;
+  background: var(--color-boton);
+  color: var(--color-blanco);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* Campos de Formulario */
+.form-grid-dos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-grupo label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-texto);
+}
+
+.form-grupo label .req {
+  color: var(--color-boton);
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  padding: 0.75rem 1.1rem;
+  border: 1.5px solid var(--color-gris-borde);
+  border-radius: var(--radio-md);
+  font-size: 0.92rem;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  transition: all var(--transicion-rapida);
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+  border-color: var(--color-primario);
+  background: var(--color-blanco);
+  box-shadow: 0 0 0 4px rgba(214, 40, 57, 0.12);
+}
+
+/* Dedicatoria Especial de Amor */
+.dedicatoria-contenedor {
+  background: #FFF9FA;
+  border: 1.5px dashed var(--color-secundario);
+  padding: 1.5rem;
+  border-radius: var(--radio-md);
+  position: relative;
+}
+
+.dedicatoria-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-boton);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dedicatoria-contenedor textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 90px;
+  background: var(--color-blanco);
+}
+
+.dedicatoria-nota {
+  display: block;
+  font-size: 0.78rem;
+  color: #777;
+  margin-top: 0.4rem;
+}
+
+/* ==========================================================================
+   Grilla y Paneles de Métodos de Pago
+   ========================================================================== */
+
+.metodos-pago-opciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.opcion-metodo-pago {
+  background: var(--color-fondo);
+  border: 2px solid var(--color-gris-borde);
+  border-radius: var(--radio-md);
+  padding: 1rem 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transicion-suave);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.opcion-metodo-pago:hover {
+  border-color: var(--color-secundario);
+  transform: translateY(-3px);
+}
+
+.opcion-metodo-pago.activo {
+  border-color: var(--color-primario);
+  background: var(--color-blanco);
+  box-shadow: 0 6px 20px rgba(214, 40, 57, 0.2);
+}
+
+.logo-metodo {
+  height: 38px;
+  width: auto;
+  max-width: 90px;
+  object-fit: contain;
+}
+
+.opcion-metodo-pago span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-texto);
+}
+
+/* Detalle del Método de Pago Activo */
+.detalle-metodo-panel {
+  display: none;
+  background: #FFF9FA;
+  border-radius: var(--radio-md);
+  padding: 1.8rem;
+  border: 1px solid var(--color-resaltado);
+  animation: fadeIn 0.3s ease;
+}
+
+.detalle-metodo-panel.activo {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.panel-yape-plin {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.qr-simulador {
+  width: 140px;
+  height: 140px;
+  background: var(--color-blanco);
+  padding: 8px;
+  border-radius: var(--radio-sm);
+  border: 1px solid var(--color-gris-borde);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.qr-simulador svg {
+  width: 100%;
+  height: 100%;
+}
+
+.instrucciones-billetera h4 {
+  font-size: 1.1rem;
+  color: var(--color-texto);
+  margin-bottom: 0.6rem;
+}
+
+.instrucciones-billetera p {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.caja-copiar-numero {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: var(--color-blanco);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radio-full);
+  border: 1.5px solid var(--color-secundario);
+}
+
+.btn-copiar {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-primario);
+  text-transform: uppercase;
+}
+
+/* Tarjeta de Crédito Simulada */
+.tarjeta-simulada-preview {
+  background: linear-gradient(135deg, #2B2B2B, #444444);
+  color: #FFF;
+  border-radius: var(--radio-md);
+  padding: 1.5rem;
+  max-width: 320px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  font-family: monospace;
+}
+
+.tarjeta-simulada-preview .chip {
+  width: 40px;
+  height: 30px;
+  background: #E5C158;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-simulada-preview .numero {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+}
+
+/* Panel Bancario */
+.tabla-cuentas-bancarias {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cuenta-banco-item {
+  background: var(--color-blanco);
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radio-sm);
+  border: 1px solid var(--color-gris-borde);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.86rem;
+}
+
+/* ==========================================================================
+   Columna Derecha del Checkout: Resumen Fijo
+   ========================================================================== */
+
+.checkout-resumen-sidebar {
+  background: var(--color-blanco);
+  border-radius: var(--radio-lg);
+  padding: 2rem;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid var(--color-gris-borde);
+  position: sticky;
+  top: 90px;
+}
+
+.checkout-lista-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 280px;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #FFF1F5;
+}
+
+.checkout-item-mini {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.checkout-item-mini img {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radio-sm);
+  object-fit: cover;
+  background: #FFF1F5;
+}
+
+.checkout-item-datos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-item-datos strong {
+  font-size: 0.88rem;
+  color: var(--color-texto);
+}
+
+.checkout-item-datos span {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* ==========================================================================
+   Modal Confirmación de Pedido (Éxito Romántico)
+   ========================================================================== */
+
+.modal-exito {
+  max-width: 620px;
+  text-align: center;
+  padding: 3rem 2.5rem;
+}
+
+.icono-cupido-exito {
+  font-size: 4rem;
+  margin-bottom: 0.8rem;
+  animation: reboteAmor 1s ease;
+}
+
+.modal-exito-header h2 {
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  color: var(--color-texto);
+  margin-bottom: 0.4rem;
+}
+
+.codigo-orden-badge {
+  display: inline-block;
+  background: #ECFDF5;
+  color: #065F46;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radio-full);
+  margin-bottom: 1rem;
+}
+
+.subtitulo-exito {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.8rem;
+}
+
+.resumen-pedido-card {
+  background: #FFF9FA;
+  border-radius: var(--radio-md);
+  padding: 1.5rem;
+  border: 1px solid var(--color-resaltado);
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.resumen-pedido-card h4 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.15rem;
+  color: var(--color-texto);
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #FFF1F5;
+  padding-bottom: 0.4rem;
+}
+
+.dedicatoria-preview-box {
+  background: var(--color-blanco);
+  padding: 0.8rem 1rem;
+  border-radius: var(--radio-sm);
+  border-left: 3px solid var(--color-primario);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.alerta-whatsapp-paso {
+  background: #E8F5E9;
+  border: 1px solid #A5D6A7;
+  color: #1B5E20;
+  padding: 0.9rem 1.2rem;
+  border-radius: var(--radio-md);
+  font-size: 0.88rem;
+  margin-bottom: 1.8rem;
+}
+
+.btn-whatsapp-confirmar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: var(--color-whatsapp);
+  color: var(--color-blanco);
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.9rem 2rem;
+  border-radius: var(--radio-full);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.35);
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+
+.btn-whatsapp-confirmar:hover {
+  background-color: #1EBE5B;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+}
+
+/* ==========================================================================
+   Responsive Checkout
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid-dos {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-yape-plin {
+    flex-direction: column;
+    text-align: center;
+  }
+}

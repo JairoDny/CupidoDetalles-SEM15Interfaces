@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="pbg7" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#FAD4E0"/>
+    </radialGradient>
+    <linearGradient id="velvet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#800020"/>
+      <stop offset="50%" stop-color="#C1121F"/>
+      <stop offset="100%" stop-color="#550015"/>
+    </linearGradient>
+    <linearGradient id="silverChain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#D1D5DB"/>
+      <stop offset="100%" stop-color="#9CA3AF"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="16" fill="url(#pbg7)"/>
+  <!-- Musical Notes Floating -->
+  <text x="80" y="110" font-family="'Segoe UI', sans-serif" font-size="28" fill="#F497B6">♪</text>
+  <text x="310" y="95" font-family="'Segoe UI', sans-serif" font-size="36" fill="#F497B6">♫</text>
+  <text x="340" y="150" font-family="'Segoe UI', sans-serif" font-size="22" fill="#D62839">♩</text>
+  <!-- Shadow -->
+  <ellipse cx="200" cy="340" rx="130" ry="22" fill="#2B2B2B" opacity="0.12"/>
+  <!-- Heart Shaped Jewelry Box Base -->
+  <g transform="translate(200, 260)">
+    <path d="M0 -30 C0 -75, -80 -80, -110 -40 C-140 0, -130 50, -60 90 L0 140 L60 90 C130 50, 140 0, 110 -40 C80 -80, 0 -75, 0 -30 Z" fill="url(#velvet)" transform="scale(0.8) translate(0, -50)"/>
+    <!-- Box Inner Velvet Cushion -->
+    <path d="M0 -30 C0 -70, -70 -75, -95 -40 C-120 0, -110 40, -50 78 L0 120 L50 78 C110 40, 120 0, 95 -40 C70 -75, 0 -70, 0 -30 Z" fill="#4A0512" transform="scale(0.72) translate(0, -45)"/>
+  </g>
+  <!-- Open Lid Tilted -->
+  <g transform="translate(200, 120) scale(0.65)">
+    <path d="M0 -30 C0 -75, -80 -80, -110 -40 C-140 0, -130 50, -60 90 L0 140 L60 90 C130 50, 140 0, 110 -40 C80 -80, 0 -75, 0 -30 Z" fill="url(#velvet)"/>
+    <ellipse cx="0" cy="20" rx="60" ry="40" fill="#E2E8F0" opacity="0.8" stroke="#D4AF37" stroke-width="4"/>
+    <path d="M-30 0 L20 30" stroke="#FFFFFF" stroke-width="3" opacity="0.6"/>
+  </g>
+  <!-- Silver Pendant / Heart Necklace Inside -->
+  <g transform="translate(200, 235)">
+    <path d="M-40 -20 Q0 30 40 -20" stroke="url(#silverChain)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Pendant -->
+    <path d="M0 10 C0 0, -18 -5, -25 5 C-32 15, -20 28, 0 45 C20 28, 32 15, 25 5 C18 -5, 0 0, 0 10 Z" fill="none" stroke="url(#silverChain)" stroke-width="4"/>
+    <circle cx="0" cy="22" r="5" fill="#60A5FA"/>
+    <circle cx="0" cy="22" r="2" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="promoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C1121F" />
+      <stop offset="60%" stop-color="#D62839" />
+      <stop offset="100%" stop-color="#F497B6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="400" rx="30" fill="url(#promoGrad)"/>
+
+  <!-- Geometric & Heart Accents -->
+  <circle cx="150" cy="80" r="120" fill="#FFFFFF" opacity="0.06"/>
+  <circle cx="1050" cy="300" r="160" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="950" cy="80" r="80" fill="#FFD6E0" opacity="0.1"/>
+
+  <!-- Left Illustration / Hearts -->
+  <g transform="translate(100, 150) scale(1.4)" fill="#FFFFFF" opacity="0.85">
+    <path d="M40 20 C40 8, 24 5, 15 14 C6 23, 6 35, 15 44 L40 66 L65 44 C74 35, 74 23, 65 14 C56 5, 40 8, 40 20 Z" />
+    <path d="M90 60 C90 52, 80 50, 74 56 C68 62, 68 70, 74 76 L90 90 L106 76 C112 70, 112 62, 106 56 C100 50, 90 52, 90 60 Z" fill="#FFD6E0"/>
+  </g>
+
+  <!-- Content text -->
+  <text x="320" y="150" font-family="'Playfair Display', Georgia, serif" font-size="44" font-weight="700" fill="#FFFFFF">
+    ¿Quieres crear un momento inolvidable?
+  </text>
+  <text x="320" y="200" font-family="'Poppins', sans-serif" font-size="20" fill="#FFD6E0" font-weight="400">
+    Personalizamos tu regalo con fotos, dedicatoria especial y entrega sorpresa programada.
+  </text>
+
+  <!-- Badge Pill -->
+  <rect x="320" y="240" width="230" height="52" rx="26" fill="#FFFFFF"/>
+  <text x="435" y="273" font-family="'Poppins', sans-serif" font-size="16" font-weight="700" fill="#C1121F" text-anchor="middle">
+    CUPÓN: AMOR10 (-10%)
+  </text>
+
+  <!-- Right Decorative Gift Box -->
+  <g transform="translate(900, 120)">
+    <rect x="0" y="40" width="160" height="150" rx="12" fill="#FFFFFF" opacity="0.95"/>
+    <rect x="65" y="40" width="30" height="150" fill="#F497B6"/>
+    <rect x="-10" y="20" width="180" height="35" rx="8" fill="#FFFFFF"/>
+    <rect x="-10" y="28" width="180" height="18" fill="#F497B6"/>
+    <!-- Bow -->
+    <circle cx="80" cy="20" r="14" fill="#F59E0B"/>
+    <path d="M80 20 C50 -15, 10 -5, 30 20 Z" fill="#FCD34D"/>
+    <path d="M80 20 C110 -15, 150 -5, 130 20 Z" fill="#FCD34D"/>
+  </g>
+</svg>

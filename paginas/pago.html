@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Finaliza tu compra en DetallesCupido. Elige tu método de pago favorito: Yape, Plin, Tarjeta o Transferencia y programa tu dedicatoria.">
+
+    <!--Sem15Interfaces - Etiquetas SEO -->
+
+  <!-- TÍTULO: aparece en la pestaña del navegador y en Google -->
+<!-- Máximo 60 caracteres -->
+<title>DetallesCupido - Regalos y Detalles Románticos para Parejas</title>
+
+<!-- DESCRIPCIÓN: texto que aparece debajo del título en Google -->
+<!-- Máximo 155 caracteres -->
+<meta name="description"
+      content="Descubre regalos románticos, desayunos sorpresa, rosas eternas y cajas personalizadas en DetallesCupido. Sorprende a tu pareja con amor y estilo.">
+
+<!-- PALABRAS CLAVE -->
+<meta name="keywords"
+      content="Regalos, Detalles, amor, Parejas, Cajas Sorpresa, Rosas Eternas, Peluches, Desayunos Románticos, Personalizados, Envío a Domicilio">
+
+<!-- INSTRUCCIONES PARA LOS MOTORES DE BÚSQUEDA -->
+<meta name="robots" content="index, follow">
+
+<!-- AUTOR DEL SITIO -->
+<meta name="author" content="Daniel Ninahuanca">
+
+<!--  -->
+<!-- TIPO DE CONTENIDO -->
+<meta property="og:type"        content="website">
+
+<!-- URL CANÓNICA DE ESTA PÁGINA (debe ser absoluta) -->
+<meta property="og:url"         content="https://MI-DOMINIO.vercel.app/">
+
+<!-- TÍTULO PARA REDES SOCIALES -->
+<meta property="og:title"       content="DetallesCupido — Regalos y Detalles Románticos para Parejas">
+
+<!-- DESCRIPCIÓN PARA REDES SOCIALES -->
+<meta property="og:description" content="Regalos y Detalles Románticos para Parejas. Descubre cajas sorpresa, rosas eternas, peluches y desayunos románticos para enamorar. ¡Sorprende a tu ser querido hoy!">
+
+<!-- IMAGEN AL COMPARTIR (URL absoluta, mínimo 1200×630 px) -->
+<meta property="og:image"       content="https://MI-DOMINIO.vercel.app/img/preview.jpg">
+
+<!-- IDIOMA Y REGIÓN -->
+<meta property="og:locale"      content="es_PE">
+
+<!-- NOMBRE DEL SITIO -->
+<meta property="og:site_name"   content="DetallesCupido">
+
+<!-- Etiquetas Twitter / X -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="DetallesCupido — Regalos y Detalles Románticos para Parejas">
+<meta name="twitter:description" content="Regalos y Detalles Románticos para Parejas. Descubre cajas sorpresa, rosas eternas, peluches y desayunos románticos para enamorar. ¡Sorprende a tu ser querido hoy!">
+<meta name="twitter:image"       content="https://MI-DOMINIO.vercel.app/img/preview.jpg">
+
+<!-- ------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------- -->
+<!-- ------------------------------------------------------------- -->
+
+
+  <link rel="icon" type="image/svg+xml" href="../assets/img/logo/favicon.svg">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/pagos.css">
+  <link rel="stylesheet" href="../css/carrito.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <aside class="topbar-romantica">
+    <span>🔒 Proceso de pago 100% cifrado y seguro &bull; Tus datos están protegidos 💖</span>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="header-navbar">
+    <div class="header-contenedor">
+      <a href="../index.html" class="nav-logo-link" aria-label="Inicio DetallesCupido">
+        <img src="../assets/img/logo/logo.svg" alt="DetallesCupido Logo" class="nav-logo-img">
+      </a>
+
+      <nav aria-label="Menú principal">
+        <ul class="nav-menu" id="nav-menu-lista">
+          <li><a href="../index.html" class="nav-item-link">Inicio</a></li>
+          <li><a href="catalogo.html" class="nav-item-link">Catálogo</a></li>
+          <li><a href="nosotros.html" class="nav-item-link">Nosotros</a></li>
+          <li><a href="../index.html#seccion-contacto" class="nav-item-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-acciones">
+        <a href="carrito.html" class="nav-cart-btn" aria-label="Ver carrito">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-carrito" style="display: none;">0</span>
+        </a>
+
+        <button type="button" class="nav-toggle-btn" id="nav-toggle-btn" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="seccion-padding">
+    <div class="contenedor">
+      
+      <!-- Título -->
+      <div class="seccion-titulo-centro" style="margin-bottom: 2.5rem;">
+        <span class="subtitulo-romantico">Paso Final</span>
+        <h1 class="titulo-principal">Finalizar Compra y <span>Dedicatoria</span></h1>
+        <p class="texto-descripcion">
+          Ingresa los datos para la entrega sorpresa, escribe tu carta de amor y selecciona tu método de pago.
+        </p>
+      </div>
+
+      <!-- Layout del Checkout -->
+      <div class="checkout-layout">
+        
+        <!-- Columna Izquierda: Formulario de 3 Pasos -->
+        <div class="checkout-formulario-box">
+          <form id="form-checkout-pago">
+            
+            <!-- PASO 1: Datos de quien envía (Comprador) -->
+            <div class="checkout-bloque-seccion">
+              <h3 class="checkout-bloque-titulo">
+                <span class="paso-numero">1</span>
+                Datos de Quien Envía el Detalle
+              </h3>
+
+              <div class="form-grid-dos">
+                <div class="form-grupo">
+                  <label for="comprador_nombre">Tu Nombre y Apellidos <span class="req">*</span></label>
+                  <input type="text" id="comprador_nombre" name="comprador_nombre" required placeholder="Ej: Fernando García">
+                </div>
+                <div class="form-grupo">
+                  <label for="comprador_telefono">Tu Teléfono / WhatsApp <span class="req">*</span></label>
+                  <input type="tel" id="comprador_telefono" name="comprador_telefono" required placeholder="Ej: 987 654 321">
+                </div>
+              </div>
+
+              <div class="form-grupo">
+                <label for="comprador_email">Tu Correo Electrónico (para confirmar pedido)</label>
+                <input type="email" id="comprador_email" name="comprador_email" placeholder="Ej: fernando@gmail.com">
+              </div>
+            </div>
+
+            <!-- PASO 2: Datos de Quien Recibe y Dedicatoria -->
+            <div class="checkout-bloque-seccion">
+              <h3 class="checkout-bloque-titulo">
+                <span class="paso-numero">2</span>
+                Lugar de Entrega y Dedicatoria de Amor
+              </h3>
+
+              <div class="form-grid-dos">
+                <div class="form-grupo">
+                  <label for="destinatario_nombre">Nombre de la Persona Afortunada <span class="req">*</span></label>
+                  <input type="text" id="destinatario_nombre" name="destinatario_nombre" required placeholder="Ej: Camila Torres">
+                </div>
+                <div class="form-grupo">
+                  <label for="destinatario_telefono">Teléfono de Contacto en Destino</label>
+                  <input type="tel" id="destinatario_telefono" name="destinatario_telefono" placeholder="Ej: 912 345 678 (opcional)">
+                </div>
+              </div>
+
+              <div class="form-grid-dos">
+                <div class="form-grupo">
+                  <label for="destinatario_direccion">Dirección Exacta de Entrega <span class="req">*</span></label>
+                  <input type="text" id="destinatario_direccion" name="destinatario_direccion" required placeholder="Ej: Av. Las Rosas 450, Dpto 302, Miraflores">
+                </div>
+                <div class="form-grupo">
+                  <label for="destinatario_referencia">Referencia de Ubicación</label>
+                  <input type="text" id="destinatario_referencia" name="destinatario_referencia" placeholder="Ej: Frente al parque, rejas blancas">
+                </div>
+              </div>
+
+              <div class="form-grid-dos">
+                <div class="form-grupo">
+                  <label for="checkout-fecha-entrega">Fecha Programada de Entrega <span class="req">*</span></label>
+                  <input type="date" id="checkout-fecha-entrega" name="entrega_fecha" required>
+                </div>
+                <div class="form-grupo">
+                  <label for="entrega_horario">Rango de Horario de Entrega <span class="req">*</span></label>
+                  <select id="entrega_horario" name="entrega_horario" required>
+                    <option value="Mañana (8:00 AM - 12:00 PM)">Mañana (8:00 AM - 12:00 PM) - Desayunos &amp; Flores</option>
+                    <option value="Tarde (1:00 PM - 5:30 PM)">Tarde (1:00 PM - 5:30 PM) - Sorpresas de Oficina/Hogar</option>
+                    <option value="Noche (6:00 PM - 9:00 PM)">Noche (6:00 PM - 9:00 PM) - Cenas &amp; Aniversarios</option>
+                    <option value="Hora Exacta (Coordinar por WhatsApp)">Hora Exacta (Coordinar por WhatsApp)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Dedicatoria en Tarjeta Romántica -->
+              <div class="dedicatoria-contenedor">
+                <div class="dedicatoria-cabecera">
+                  <span>💌</span>
+                  <strong>Tarjeta Romántica Personalizada (¡Totalmente GRATIS!)</strong>
+                </div>
+                <textarea id="tarjeta_dedicatoria" name="tarjeta_dedicatoria" placeholder="Escribe aquí las palabras que salgan de tu corazón... Nosotros las imprimiremos a mano en una tarjeta fina con sello de cera roja."></textarea>
+                <small class="dedicatoria-nota">Tip: Si prefieres que sea anónimo o entregado como admirador secreto, indícalo aquí.</small>
+              </div>
+            </div>
+
+            <!-- PASO 3: Selección de Métodos de Pago -->
+            <div class="checkout-bloque-seccion">
+              <h3 class="checkout-bloque-titulo">
+                <span class="paso-numero">3</span>
+                Selecciona tu Método de Pago
+              </h3>
+
+              <!-- Grilla de Opciones Visuales -->
+              <div class="metodos-pago-opciones-grid">
+                <div class="opcion-metodo-pago activo" data-metodo="yape">
+                  <img src="../assets/img/iconos/yape.svg" alt="Yape" class="logo-metodo">
+                  <span>Yape</span>
+                </div>
+                <div class="opcion-metodo-pago" data-metodo="plin">
+                  <img src="../assets/img/iconos/plin.svg" alt="Plin" class="logo-metodo">
+                  <span>Plin</span>
+                </div>
+                <div class="opcion-metodo-pago" data-metodo="tarjeta">
+                  <img src="../assets/img/iconos/visa.svg" alt="Visa / Mastercard" class="logo-metodo">
+                  <span>Tarjeta</span>
+                </div>
+                <div class="opcion-metodo-pago" data-metodo="transferencia">
+                  <img src="../assets/img/iconos/transferencia.svg" alt="Transferencia Bancaria" class="logo-metodo">
+                  <span>Bancos</span>
+                </div>
+                <div class="opcion-metodo-pago" data-metodo="contraentrega">
+                  <img src="../assets/img/iconos/efectivo.svg" alt="Pago Contraentrega" class="logo-metodo">
+                  <span>Contraentrega</span>
+                </div>
+              </div>
+
+              <!-- PANELES DE CADA MÉTODO -->
+
+              <!-- Panel 1: YAPE -->
+              <div class="detalle-metodo-panel activo" data-metodo-panel="yape">
+                <div class="panel-yape-plin">
+                  <div class="qr-simulador">
+                    <!-- SVG QR Realista Representativo -->
+                    <svg viewBox="0 0 100 100" fill="#742284">
+                      <rect width="100" height="100" fill="#FFF"/>
+                      <path d="M10 10h25v25h-25z M15 15h15v15h-15z M65 10h25v25h-25z M70 15h15v15h-15z M10 65h25v25h-25z M15 70h15v15h-15z" fill="#742284"/>
+                      <rect x="42" y="10" width="8" height="25" fill="#742284"/>
+                      <rect x="10" y="42" width="25" height="8" fill="#742284"/>
+                      <rect x="42" y="42" width="16" height="16" fill="#00D2B4"/>
+                      <rect x="65" y="42" width="25" height="8" fill="#742284"/>
+                      <rect x="42" y="65" width="8" height="25" fill="#742284"/>
+                      <rect x="60" y="65" width="15" height="15" fill="#742284"/>
+                      <rect x="80" y="80" width="10" height="10" fill="#742284"/>
+                    </svg>
+                    <small style="font-size: 8px; font-weight: 700; color: #742284; margin-top: 2px;">QR YAPE CUPIDO</small>
+                  </div>
+                  <div class="instrucciones-billetera">
+                    <h4>Paga al instante con Yape</h4>
+                    <p>1. Abre tu app Yape y escanea el código QR o yapea directamente al número:</p>
+                    <div class="caja-copiar-numero">
+                      <strong>📱 987 654 321</strong>
+                      <button type="button" class="btn-copiar" onclick="copiarTexto('987654321', 'Número de Yape')">Copiar</button>
+                    </div>
+                    <p style="margin-top: 0.6rem; font-size: 0.8rem; color: #777;">
+                      Titular: <strong>DetallesCupido S.A.C.</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 2: PLIN -->
+              <div class="detalle-metodo-panel" data-metodo-panel="plin">
+                <div class="panel-yape-plin">
+                  <div class="qr-simulador">
+                    <svg viewBox="0 0 100 100">
+                      <rect width="100" height="100" fill="#FFF"/>
+                      <path d="M10 10h25v25h-25z M15 15h15v15h-15z M65 10h25v25h-25z M70 15h15v15h-15z M10 65h25v25h-25z M15 70h15v15h-15z" fill="#00D4FF"/>
+                      <rect x="42" y="10" width="8" height="25" fill="#0D2E5C"/>
+                      <rect x="10" y="42" width="25" height="8" fill="#0D2E5C"/>
+                      <rect x="42" y="42" width="16" height="16" fill="#00D4FF"/>
+                      <rect x="65" y="42" width="25" height="8" fill="#0D2E5C"/>
+                      <rect x="42" y="65" width="8" height="25" fill="#0D2E5C"/>
+                      <rect x="60" y="65" width="15" height="15" fill="#00D4FF"/>
+                    </svg>
+                    <small style="font-size: 8px; font-weight: 700; color: #0D2E5C; margin-top: 2px;">QR PLIN CUPIDO</small>
+                  </div>
+                  <div class="instrucciones-billetera">
+                    <h4>Paga al instante con Plin</h4>
+                    <p>Funciona desde BBVA, Interbank, Scotiabank o BanBif al número:</p>
+                    <div class="caja-copiar-numero">
+                      <strong>📱 987 654 321</strong>
+                      <button type="button" class="btn-copiar" onclick="copiarTexto('987654321', 'Número de Plin')">Copiar</button>
+                    </div>
+                    <p style="margin-top: 0.6rem; font-size: 0.8rem; color: #777;">
+                      Titular: <strong>DetallesCupido S.A.C.</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 3: TARJETA DE CRÉDITO/DÉBITO -->
+              <div class="detalle-metodo-panel" data-metodo-panel="tarjeta">
+                <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                  <div class="tarjeta-simulada-preview">
+                    <div class="chip"></div>
+                    <div class="numero">•••• •••• •••• 4242</div>
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem;">
+                      <span>TITULAR: CUPIDO LOVE</span>
+                      <span>EXP: 12/28</span>
+                    </div>
+                  </div>
+
+                  <div style="flex: 1; min-width: 250px;">
+                    <div class="form-grupo">
+                      <label>Número de Tarjeta:</label>
+                      <input type="text" placeholder="4557 •••• •••• ••••" maxlength="19">
+                    </div>
+                    <div class="form-grid-dos">
+                      <div class="form-grupo">
+                        <label>Vencimiento:</label>
+                        <input type="text" placeholder="MM/AA" maxlength="5">
+                      </div>
+                      <div class="form-grupo">
+                        <label>CVV / CVC:</label>
+                        <input type="password" placeholder="123" maxlength="4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 4: TRANSFERENCIA BANCARIA -->
+              <div class="detalle-metodo-panel" data-metodo-panel="transferencia">
+                <div class="tabla-cuentas-bancarias">
+                  <div class="cuenta-banco-item">
+                    <div>
+                      <strong>Banco de Crédito (BCP)</strong>
+                      <p style="color: #666; font-size: 0.82rem;">Cta Cte Soles: 194-98765432-0-15</p>
+                      <p style="color: #888; font-size: 0.78rem;">CCI: 002-194009876543201590</p>
+                    </div>
+                    <button type="button" class="btn-copiar" onclick="copiarTexto('19498765432015', 'Cuenta BCP')">Copiar</button>
+                  </div>
+
+                  <div class="cuenta-banco-item">
+                    <div>
+                      <strong>BBVA Continental</strong>
+                      <p style="color: #666; font-size: 0.82rem;">Cta Cte Soles: 0011-0123-0200456789</p>
+                      <p style="color: #888; font-size: 0.78rem;">CCI: 011-12300020045678912</p>
+                    </div>
+                    <button type="button" class="btn-copiar" onclick="copiarTexto('001101230200456789', 'Cuenta BBVA')">Copiar</button>
+                  </div>
+
+                  <div class="cuenta-banco-item">
+                    <div>
+                      <strong>Interbank</strong>
+                      <p style="color: #666; font-size: 0.82rem;">Cta Ahorros: 200-3001234567</p>
+                      <p style="color: #888; font-size: 0.78rem;">CCI: 003-20000300123456781</p>
+                    </div>
+                    <button type="button" class="btn-copiar" onclick="copiarTexto('2003001234567', 'Cuenta Interbank')">Copiar</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel 5: CONTRAENTREGA -->
+              <div class="detalle-metodo-panel" data-metodo-panel="contraentrega">
+                <div style="background: #FFF; padding: 1.2rem; border-radius: var(--radio-sm); border: 1px solid var(--color-gris-borde);">
+                  <h4 style="color: var(--color-texto); margin-bottom: 0.4rem;">💵 Pago en Efectivo al Recibir</h4>
+                  <p style="font-size: 0.88rem; color: #555; line-height: 1.6;">
+                    Disponible únicamente para entregas en Lima Metropolitana. Puedes pagar en efectivo con monto exacto o contraentrega con Yape/Plin al repartidor cuando entregue tu sorpresa.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Botón de Envío del Pedido -->
+            <button type="submit" class="btn-primario btn-bloque" style="padding: 1.1rem; font-size: 1.1rem; box-shadow: 0 10px 30px rgba(193, 18, 31, 0.4);">
+              Confirmar y Enviar Pedido Romántico 💘
+            </button>
+
+          </form>
+        </div>
+
+        <!-- Columna Derecha: Resumen del Pedido -->
+        <aside class="checkout-resumen-sidebar">
+          <h3 class="resumen-titulo">Tu Pedido</h3>
+          
+          <!-- Lista de Items Mini -->
+          <div class="checkout-lista-items" id="checkout-lista-items">
+            <!-- Sincronizado por js/pagos.js -->
+          </div>
+
+          <!-- Desglose de Totales -->
+          <div class="resumen-desglose" id="checkout-resumen-totales">
+            <!-- Sincronizado por js/pagos.js -->
+          </div>
+
+          <div class="resumen-garantias">
+            <div class="garantia-item">
+              <span>🔒</span>
+              <p>Seguridad SSL de 256 bits</p>
+            </div>
+            <div class="garantia-item">
+              <span>💌</span>
+              <p>Tarjeta con dedicatoria incluida</p>
+            </div>
+            <div class="garantia-item">
+              <span>📸</span>
+              <p>Te enviamos foto del producto terminado antes del despacho</p>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-seccion">
+    <div class="contenedor">
+      <div class="footer-inferior" style="border-top: none; padding-top: 0;">
+        <div class="footer-inferior-contenedor">
+          <p class="footer-copyright">&copy; 2026 <strong>DetallesCupido</strong>. Todos los derechos reservados.</p>
+          <div class="footer-metodos-iconos">
+            <img src="../assets/img/iconos/yape.svg" alt="Yape" class="footer-metodo-badge">
+            <img src="../assets/img/iconos/plin.svg" alt="Plin" class="footer-metodo-badge">
+            <img src="../assets/img/iconos/visa.svg" alt="Visa" class="footer-metodo-badge">
+            <img src="../assets/img/iconos/mastercard.svg" alt="Mastercard" class="footer-metodo-badge">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/productos.js"></script>
+  <script src="../js/carrito.js"></script>
+  <script src="../js/pagos.js"></script>
+
+  <script>
+    const toggleBtn = document.getElementById('nav-toggle-btn');
+    const navMenu = document.getElementById('nav-menu-lista');
+    if (toggleBtn && navMenu) {
+      toggleBtn.addEventListener('click', () => {
+        toggleBtn.classList.toggle('activo');
+        navMenu.classList.toggle('activo');
+      });
+    }
+  </script>
+</body>
+</html>

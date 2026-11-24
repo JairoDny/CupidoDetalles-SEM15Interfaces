@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="pbg4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E1428"/>
+      <stop offset="100%" stop-color="#0E0A14"/>
+    </radialGradient>
+    <radialGradient id="roseGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#FF3366"/>
+      <stop offset="40%" stop-color="#C1121F"/>
+      <stop offset="100%" stop-color="#60020B"/>
+    </radialGradient>
+    <linearGradient id="woodBase" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5C3A21"/>
+      <stop offset="50%" stop-color="#8B5A2B"/>
+      <stop offset="100%" stop-color="#4A2E19"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="16" fill="url(#pbg4)"/>
+  <!-- Ambient Rose Glow -->
+  <circle cx="200" cy="180" r="110" fill="#FF1E56" opacity="0.18"/>
+  <ellipse cx="200" cy="340" rx="130" ry="25" fill="#000000" opacity="0.6"/>
+  <!-- Wooden Base -->
+  <ellipse cx="200" cy="315" rx="100" ry="22" fill="url(#woodBase)"/>
+  <rect x="100" y="315" width="200" height="20" fill="#4A2E19"/>
+  <ellipse cx="200" cy="335" rx="100" ry="22" fill="url(#woodBase)"/>
+  <!-- Stem -->
+  <path d="M200 310 Q205 240 198 180" stroke="#2E7D32" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Leaves -->
+  <path d="M199 260 Q170 250 165 240 Q180 235 200 248" fill="#388E3C"/>
+  <path d="M200 220 Q230 210 235 200 Q220 195 199 210" fill="#388E3C"/>
+  <!-- Preserved Red Rose Blossom -->
+  <g transform="translate(200, 150)">
+    <circle cx="0" cy="0" r="32" fill="url(#roseGlow)"/>
+    <!-- Petals -->
+    <path d="M-20 -10 C-30 -25, 0 -35, 10 -20 C25 -30, 35 -10, 20 10 C30 25, 10 35, -5 25 C-25 30, -35 10, -20 -10 Z" fill="#D62839"/>
+    <ellipse cx="0" cy="0" rx="16" ry="20" fill="#E61C39"/>
+    <ellipse cx="0" cy="0" rx="9" ry="12" fill="#FFD6E0" opacity="0.4"/>
+  </g>
+  <!-- Fallen Petals on Base -->
+  <ellipse cx="170" cy="315" rx="10" ry="5" fill="#C1121F" transform="rotate(-15 170 315)"/>
+  <ellipse cx="225" cy="320" rx="12" ry="6" fill="#C1121F" transform="rotate(20 225 320)"/>
+  <!-- Glass Cloche / Dome -->
+  <path d="M115 315 L115 150 C115 80, 285 80, 285 150 L285 315" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="2.5"/>
+  <ellipse cx="200" cy="315" rx="85" ry="12" fill="none" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="2"/>
+  <!-- Glass Reflection highlights -->
+  <path d="M130 290 L130 160 C130 105, 160 90, 180 85" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Fairy LED Tiny Lights -->
+  <circle cx="160" cy="270" r="3" fill="#FCD34D"/>
+  <circle cx="185" cy="295" r="2.5" fill="#FCD34D"/>
+  <circle cx="215" cy="280" r="3.5" fill="#FCD34D"/>
+  <circle cx="230" cy="240" r="2.5" fill="#FCD34D"/>
+  <circle cx="175" cy="210" r="3" fill="#FCD34D"/>
+  <circle cx="220" cy="180" r="2.5" fill="#FCD34D"/>
+</svg>

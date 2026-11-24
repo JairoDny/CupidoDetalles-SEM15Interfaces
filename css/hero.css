@@ -1,0 +1,250 @@
+/* ==========================================================================
+   DetallesCupido - Sección Hero / Portada (hero.css)
+   ========================================================================== */
+
+.hero-seccion {
+  position: relative;
+  background: radial-gradient(circle at 80% 20%, #FFE4EC 0%, #FFF1F5 60%, #FFF5F7 100%);
+  padding: 4.5rem 0 5.5rem 0;
+  overflow: hidden;
+}
+
+.hero-contenedor {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+/* Columna Izquierda: Mensaje */
+.hero-contenido {
+  z-index: 2;
+}
+
+.hero-badge-novedad {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(214, 40, 57, 0.1);
+  color: var(--color-primario);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radio-full);
+  margin-bottom: 1.2rem;
+  border: 1px solid rgba(244, 151, 182, 0.4);
+}
+
+.hero-badge-novedad .icono-corazon {
+  animation: latido 1.4s infinite ease-in-out;
+}
+
+@keyframes latido {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.25); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.25); }
+  70% { transform: scale(1); }
+}
+
+.hero-titulo {
+  font-family: var(--fuente-titulos);
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--color-texto);
+  line-height: 1.15;
+  margin-bottom: 1.4rem;
+}
+
+.hero-titulo .texto-acento {
+  color: var(--color-primario);
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+}
+
+.hero-titulo .texto-acento::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(244, 151, 182, 0.45);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.hero-frase {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #4A4A4A;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  border-left: 3.5px solid var(--color-secundario);
+  padding-left: 1.2rem;
+}
+
+.hero-botones {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Indicadores de Confianza / Estadísticas */
+.hero-estadisticas {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-gris-borde);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-numero {
+  font-family: var(--fuente-titulos);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-boton);
+}
+
+.stat-texto {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Columna Derecha: Imagen / Banner Romántico */
+.hero-banner-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-imagen-principal {
+  width: 100%;
+  max-width: 520px;
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-fuerte);
+  transition: transform var(--transicion-suave);
+}
+
+.hero-imagen-principal:hover {
+  transform: translateY(-8px) scale(1.01);
+}
+
+/* Tarjeta Flotante Romántica */
+.hero-tarjeta-flotante {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: var(--color-blanco);
+  padding: 1rem 1.4rem;
+  border-radius: var(--radio-md);
+  box-shadow: 0 12px 35px rgba(214, 40, 57, 0.18);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--color-resaltado);
+  animation: flotarCard 4s ease-in-out infinite alternate;
+}
+
+@keyframes flotarCard {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.icono-tarjeta-flotante {
+  width: 44px;
+  height: 44px;
+  background: #FFF1F5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.info-tarjeta-flotante strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--color-texto);
+}
+
+.info-tarjeta-flotante span {
+  font-size: 0.8rem;
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+/* Elementos de Fondo Animados */
+.hero-decoracion-circulo {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(244, 151, 182, 0.25) 0%, transparent 70%);
+  top: -100px;
+  right: -100px;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Responsive Hero
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .hero-contenedor {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-frase {
+    border-left: none;
+    padding-left: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-botones {
+    justify-content: center;
+  }
+
+  .hero-estadisticas {
+    justify-content: center;
+  }
+
+  .hero-tarjeta-flotante {
+    left: 20px;
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-titulo {
+    font-size: 2.5rem;
+  }
+
+  .hero-frase {
+    font-size: 1.05rem;
+  }
+
+  .hero-estadisticas {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .hero-tarjeta-flotante {
+    position: static;
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,281 @@
+/* ==========================================================================
+   DetallesCupido - Sección Nosotros (nosotros.css)
+   ========================================================================== */
+
+/* Historia */
+.nosotros-historia-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.nosotros-historia-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.nosotros-historia-texto p {
+  font-size: 1.05rem;
+  color: #4A4A4A;
+  line-height: 1.8;
+}
+
+.cita-fundadora {
+  background: var(--color-blanco);
+  border-left: 4px solid var(--color-primario);
+  padding: 1.2rem 1.6rem;
+  border-radius: 0 var(--radio-md) var(--radio-md) 0;
+  box-shadow: var(--sombra-suave);
+  font-family: var(--fuente-titulos);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--color-texto);
+}
+
+.nosotros-banner-img {
+  width: 100%;
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-fuerte);
+}
+
+/* Misión y Visión Cards */
+.mision-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.card-mision-vision {
+  background: var(--color-blanco);
+  padding: 2.5rem;
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-suave);
+  border: 1px solid var(--color-gris-borde);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transicion-suave);
+}
+
+.card-mision-vision:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sombra-media);
+}
+
+.card-mision-vision::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--color-primario), var(--color-secundario));
+}
+
+.icono-mision-vision {
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+}
+
+.card-mision-vision h3 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.6rem;
+  color: var(--color-texto);
+  margin-bottom: 0.8rem;
+}
+
+.card-mision-vision p {
+  font-size: 0.98rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Valores de la Marca */
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.valor-card {
+  background: var(--color-blanco);
+  border-radius: var(--radio-md);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid var(--color-gris-borde);
+  transition: all var(--transicion-suave);
+}
+
+.valor-card:hover {
+  border-color: var(--color-secundario);
+  transform: translateY(-5px);
+  box-shadow: var(--sombra-media);
+}
+
+.valor-icono {
+  width: 64px;
+  height: 64px;
+  background: #FFF1F5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 1.2rem auto;
+}
+
+.valor-card h4 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.25rem;
+  color: var(--color-texto);
+  margin-bottom: 0.6rem;
+}
+
+.valor-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Línea de Proceso: Cómo Hacemos Magia */
+.proceso-pasos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.paso-item {
+  background: var(--color-blanco);
+  padding: 2rem 1.5rem;
+  border-radius: var(--radio-md);
+  text-align: center;
+  border: 1px solid var(--color-gris-borde);
+  position: relative;
+}
+
+.paso-numero-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-boton);
+  color: var(--color-blanco);
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.88rem;
+  box-shadow: 0 4px 10px rgba(193, 18, 31, 0.3);
+}
+
+.paso-item h4 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.15rem;
+  color: var(--color-texto);
+  margin: 0.8rem 0 0.5rem 0;
+}
+
+.paso-item p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Testimonios de Parejas */
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonio-card {
+  background: var(--color-blanco);
+  border-radius: var(--radio-lg);
+  padding: 2rem;
+  box-shadow: var(--sombra-suave);
+  border: 1px solid var(--color-gris-borde);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.testimonio-estrellas {
+  color: var(--color-dorado);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.testimonio-texto {
+  font-size: 0.95rem;
+  color: #4A4A4A;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.testimonio-autor {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid #FFF1F5;
+}
+
+.avatar-pareja {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFE4EC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.autor-info strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--color-texto);
+}
+
+.autor-info span {
+  font-size: 0.78rem;
+  color: var(--color-primario);
+}
+
+/* ==========================================================================
+   Responsive Nosotros
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .nosotros-historia-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .proceso-pasos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mision-vision-grid {
+    grid-template-columns: 1fr;
+  }
+  .proceso-pasos-grid {
+    grid-template-columns: 1fr;
+  }
+}
